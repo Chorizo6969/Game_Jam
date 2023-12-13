@@ -11,17 +11,23 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     Vector2 _moveDirection;
     Vector2 _lookDirection;
 
-    private float minY = -90f;
-    private float maxY = 90f;
+    private float minHeadRotate = -100f;
+    private float maxHeadRotate = 100f;
 
     float lookX;
     float lookY;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     public void OnLook(InputAction.CallbackContext context)
     {
         _lookDirection = context.ReadValue<Vector2>();
 
-        lookY = Mathf.Clamp(lookY, minY, maxY);
+        lookY = Mathf.Clamp(lookY, minHeadRotate, maxHeadRotate);
         playerTransform.localEulerAngles = new Vector3(0, lookX, 0);
         cameraTransform.localEulerAngles = new Vector3(lookY, 0, 0);
 
