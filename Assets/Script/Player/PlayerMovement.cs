@@ -1,18 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions
+public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input system created
 {
     public float speed;
+    public float lookSpeed;
     public Transform playerTransform;
+    public Transform cameraTransform;
 
     Vector2 _moveDirection;
+    Vector2 _lookDirection;
+
+    private float minY = -90f;
+    private float maxY = 90f;
+
+    float lookX;
+    float lookY;
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        _lookDirection = context.ReadValue<Vector2>();
+
+        lookY = Mathf.Clamp(lookY, minY, maxY);
+        playerTransform.localEulerAngles = new Vector3(0, lookX, 0);
+        cameraTransform.localEulerAngles = new Vector3(lookY, 0, 0);
+
+        // Rotation du joueur autour de l'axe X (vertical)
+        // Player rotation around the X axis (vertical)
+        lookX += context.ReadValue<Vector2>().x * lookSpeed * Time.deltaTime;
+
+        // Rotation de la caméra autour de l'axe Y (horizontal)
+        // Camera rotation around the Y axis (horizontal)
+        lookY -= context.ReadValue<Vector2>().y * lookSpeed * Time.deltaTime;
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -20,19 +39,17 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions
         _moveDirection = context.ReadValue<Vector2>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
         playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
 
         // Si la direction verticale (_moveDirection.y) est positive, utilise cette direction pour avancer devant
+        // If the vertical direction (_moveDirection.y) is positive, use this direction to move forward
         if (_moveDirection.y > 0)
         {
-            Vector3 forwardDirection = playerTransform.forward * _moveDirection.y;
+            Vector3 forwardDirection = cameraTransform.forward * _moveDirection.y;
             playerTransform.Translate(forwardDirection * (speed * Time.deltaTime));
         }
-
-
     }
 }
