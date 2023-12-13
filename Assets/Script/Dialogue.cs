@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.UIElements;
-using System.Diagnostics.Tracing;
-using System;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     public TMP_Text monTexte;
-    Coroutine maCoroutine;
     public float Delay;
-    private int Compte = 0;
     public List<string> dialogueList;
     public GameObject fauxPanel;
     public bool Detruire = true;
+    public GameObject Roger;
 
+    Coroutine maCoroutine;
+
+    private int Compte = 0;
     private string current;
 
     bool isPressed;
@@ -64,7 +63,7 @@ public class Dialogue : MonoBehaviour
             Compte = 0;
             if (Detruire)
             {
-                Destroy(gameObject);
+                Destroy(Roger);
             }
         }
         else
