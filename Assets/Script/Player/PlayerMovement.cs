@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions
     public float speed;
     public Transform playerTransform;
 
-    private Vector3 _direction;
+    Vector2 _moveDirection;
 
     public void OnLook(InputAction.CallbackContext context)
     {
@@ -17,12 +17,22 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        _direction = context.ReadValue<Vector2>();
+        _moveDirection = context.ReadValue<Vector2>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
+        playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
+
+        // Si la direction verticale (_moveDirection.y) est positive, utilise cette direction pour avancer devant
+        if (_moveDirection.y > 0)
+        {
+            Vector3 forwardDirection = playerTransform.forward * _moveDirection.y;
+            playerTransform.Translate(forwardDirection * (speed * Time.deltaTime));
+        }
+
+
     }
 }
