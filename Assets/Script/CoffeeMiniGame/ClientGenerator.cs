@@ -23,18 +23,20 @@ public class ClientGenerator : MonoBehaviour
 
     public GameObject clientPrefab;
 
-    public List<GameObject> clientPostionList;
+    public List<GameObject> clientPositionList;
     public void RandomPosition()  
     {
-        int randomClient = Random.Range(0, clientPostionList.Count); //chiffre random entre 0 et le nombre d'élément de la liste de position de client
-        Vector3 randomPos = clientPostionList[randomClient].transform.position;
+        int randomClient = Random.Range(0, clientPositionList.Count); //chiffre random entre 0 et le nombre d'élément de la liste de position de client
+        Vector3 randomPos = clientPositionList[randomClient].transform.position;
         clientPrefab.transform.position = randomPos;
+        clientPositionList.Remove(clientPositionList[randomClient]);
+        
     }
 
     public void CreateClient() //création client
     {
         GameObject newClient = Instantiate(clientPrefab);
-        newClient.GetComponent<ClientRequest>();
+        newClient.AddComponent<ClientRequest>();
         RandomPosition();
         StartCoroutine(WaitForNewClient());
     }
