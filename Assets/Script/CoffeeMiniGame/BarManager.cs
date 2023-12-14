@@ -22,7 +22,7 @@ public class BarManager : MonoBehaviour
     }
 
     public int satifactionClient;
-    public bool canRequest;
+    public bool clientGoAway;
 
     public void Start()
     {
@@ -31,9 +31,14 @@ public class BarManager : MonoBehaviour
     public void TimeTooLong()
     {
         satifactionClient--;
+        Debug.Log("angryClient");
+        clientGoAway = true;
     }
     public void HappyClient()
     {
         satifactionClient++;
+        clientGoAway = true;
+        Debug.Log("happyClient");
+
     }
 }

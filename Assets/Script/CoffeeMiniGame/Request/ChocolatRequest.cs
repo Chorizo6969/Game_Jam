@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class ChocolatRequest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void IHaveSomething(GameObject gameObject)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (gameObject.name == "Chocolat")
+        {
+            BarManager.Instance.clientGoAway = false;
+            BarManager.Instance.HappyClient();
+            Destroy(gameObject);
+        }
+        else
+        {
+            BarManager.Instance.clientGoAway = false;
+            BarManager.Instance.TimeTooLong();
+            Destroy(gameObject);
+        }
     }
 }

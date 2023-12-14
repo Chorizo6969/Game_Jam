@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class CoffeeRequest : MonoBehaviour
 {
-    public void IHaveSomething()
+    public void IHaveSomething(GameObject gameObject)
     {
-        BarManager.Instance.HappyClient();
+        if (gameObject.name == "Coffee")
+        {
+            BarManager.Instance.clientGoAway = false;
+            BarManager.Instance.HappyClient();
+            Destroy(gameObject);
+        }
+        else
+        {
+            BarManager.Instance.clientGoAway = false;
+            BarManager.Instance.TimeTooLong();
+            Destroy(gameObject);
+        }
     }
 }

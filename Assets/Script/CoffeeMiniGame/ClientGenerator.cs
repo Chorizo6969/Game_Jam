@@ -16,7 +16,7 @@ public class ClientGenerator : MonoBehaviour
             return _instance;
         }
     }
-    public void Awake() 
+    public void Awake()
     {
         _instance = this;
     }
@@ -24,13 +24,24 @@ public class ClientGenerator : MonoBehaviour
     public GameObject clientPrefab;
 
     public List<GameObject> clientPositionList;
-    public void RandomPosition()  
+
+    [SerializeField] private List<GameObject> _positionList;
+    public void RandomPosition()
     {
-        int randomClient = Random.Range(0, clientPositionList.Count); //chiffre random entre 0 et le nombre d'élément de la liste de position de client
-        Vector3 randomPos = clientPositionList[randomClient].transform.position;
-        clientPrefab.transform.position = randomPos;
-        clientPositionList.Remove(clientPositionList[randomClient]);
-        
+        if (clientPositionList.Count > 0)
+        {
+            int randomClient = Random.Range(0, clientPositionList.Count); //chiffre random entre 0 et le nombre d'élément de la liste de position de client
+            Vector3 randomPos = clientPositionList[randomClient].transform.position;
+            clientPositionList.Remove(clientPositionList[randomClient]);
+            Debug.Log("remove position");
+            clientPrefab.transform.position = randomPos;
+        }
+        else
+        {
+            clientPositionList.AddRange(_positionList);
+            Debug.Log("add");
+
+        }
     }
 
     public void CreateClient() //création client
@@ -43,7 +54,7 @@ public class ClientGenerator : MonoBehaviour
 
     IEnumerator WaitForNewClient()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         CreateClient();
     }
 }

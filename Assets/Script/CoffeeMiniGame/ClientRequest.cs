@@ -26,11 +26,13 @@ public class ClientRequest : MonoBehaviour
         if (randomRequest <= 20 && randomRequest > 10)
         {
             GiveMeTea();
+            this.AddComponent<TeaRequest>();
         }
 
         if (randomRequest > 20)
         {
             GiveMeChocolat();
+            this.AddComponent<ChocolatRequest>();
         }
     }
     public void GiveMeCoffee()
@@ -56,7 +58,7 @@ public class ClientRequest : MonoBehaviour
 
     IEnumerator WaitRequest()
     {
-       yield return new WaitForSeconds(2);
-        //BarManager.Instance.TimeTooLong();
+        yield return new WaitForSeconds(2);
+        BarManager.Instance.TimeTooLong();
     }
 }
