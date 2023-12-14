@@ -20,6 +20,7 @@ public class ClientRequest : MonoBehaviour
         if (randomRequest <= 10)
         {
             GiveMeCoffee();
+            this.AddComponent<CoffeeRequest>();
         }
 
         if (randomRequest <= 20 && randomRequest > 10)
@@ -53,11 +54,6 @@ public class ClientRequest : MonoBehaviour
         StartCoroutine(WaitRequest());
     }
 
-    public void IHaveSomething()
-    {
-        iWantCoffee = false;
-        BarManager.Instance.HappyClient();
-    }
     IEnumerator WaitRequest()
     {
        yield return new WaitForSeconds(2);
