@@ -19,8 +19,8 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OnLook(InputAction.CallbackContext context)
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
         // Player rotation around the X axis (vertical)
         lookX += context.ReadValue<Vector2>().x * lookSpeed * Time.deltaTime;
 
-        // Rotation de la caméra autour de l'axe Y (horizontal)
+        // Rotation de la camï¿½ra autour de l'axe Y (horizontal)
         // Camera rotation around the Y axis (horizontal)
         lookY -= context.ReadValue<Vector2>().y * lookSpeed * Time.deltaTime;
     }
