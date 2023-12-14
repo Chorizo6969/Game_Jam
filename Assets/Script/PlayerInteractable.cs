@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerInteractable : MonoBehaviour
@@ -7,19 +8,20 @@ public class PlayerInteractable : MonoBehaviour
     public Camera cam;
 
     [SerializeField]
-
     private float distance = 3f;
+
     [SerializeField]
     private LayerMask mask;
-    private Player_Ui playerUI;
 
-    // Start is called before the first frame update
+    private Player_Ui playerUI;
+    private PlayerInput inputManager;
+    private Interactable interactable;  //test pour savoir si elle est visible
+
     void Start()
     {
         playerUI = GetComponent<Player_Ui>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerUI.UpdateText(string.Empty);
@@ -28,10 +30,21 @@ public class PlayerInteractable : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, distance, mask))
         {
-            if (hitInfo.collider.GetComponent<Interactable>() != null)
-            { 
-                playerUI.UpdateText(hitInfo.collider.GetComponent<Interactable>().promptMessage);
+            interactable = hitInfo.collider.GetComponent<Interactable>(); // Mettre à jour interactable
+            if (interactable != null)
+            {
+                playerUI.UpdateText(interactable.promptMessage);
             }
         }
     }
+
+    public void OnInteract()
+    {
+        if (inputManager.Player.Interact.triggered && interactable != null)
+        {
+            Debug.Log("A");
+            interactable.BaseInteract();
+        }
+    }
 }
+

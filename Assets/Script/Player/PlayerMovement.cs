@@ -58,4 +58,9 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
         //    playerTransform.Translate(forwardDirection * (speed * Time.deltaTime));
         //}
     }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        throw new System.NotImplementedException();
+    }
 }
