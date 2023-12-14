@@ -364,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521800116}
-  - component: {fileID: 521800115}
+  - component: {fileID: 521800117}
   m_Layer: 0
   m_Name: ClientGenerator
   m_TagString: Untagged
@@ -372,26 +372,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &521800115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521800114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13f542d3cb53a44ea4ee013acaa8ac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clientPrefab: {fileID: 8675853117698458562, guid: d8ce2bb60ddd0d84ba9039be3db45a23, type: 3}
-  clientPostionList:
-  - {fileID: 409213658}
-  - {fileID: 1297309627}
-  - {fileID: 1549326611}
-  - {fileID: 158632839}
-  - {fileID: 1565595253}
-  - {fileID: 740796324}
 --- !u!4 &521800116
 Transform:
   m_ObjectHideFlags: 0
@@ -407,6 +387,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521800117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521800114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13f542d3cb53a44ea4ee013acaa8ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientPrefab: {fileID: 8675853117698458562, guid: d8ce2bb60ddd0d84ba9039be3db45a23, type: 3}
+  clientPositionList:
+  - {fileID: 409213658}
+  - {fileID: 1297309627}
+  - {fileID: 1549326611}
+  - {fileID: 158632839}
+  - {fileID: 1565595253}
+  - {fileID: 740796324}
+  _positionList:
+  - {fileID: 409213658}
+  - {fileID: 1297309627}
+  - {fileID: 1549326611}
+  - {fileID: 158632839}
+  - {fileID: 1565595253}
+  - {fileID: 740796324}
 --- !u!1 &569895451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,7 +1262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4baaa841b8e68d45aedc1b4cf0ad8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inHand: 0
 --- !u!4 &1340700946
 Transform:
   m_ObjectHideFlags: 0
@@ -1332,7 +1338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   satifactionClient: 0
-  canRequest: 0
+  clientGoAway: 0
 --- !u!4 &1551986803
 Transform:
   m_ObjectHideFlags: 0
