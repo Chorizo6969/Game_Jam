@@ -430,6 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165334024}
   - component: {fileID: 165334025}
+  - component: {fileID: 165334026}
   m_Layer: 0
   m_Name: LampLight (2)
   m_TagString: Untagged
@@ -464,7 +465,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6415094, g: 0.55415106, b: 0.3171235, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.01
   m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -514,6 +515,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &165334026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165334023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1aa3600c1bbe74ebd6d5ef9c959911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 165334025}
+  isPartyEnabled: 0
+  colorOff: {r: 0, g: 0, b: 0, a: 0}
+  timeToStart: 0.9
 --- !u!64 &176543025
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2355,6 +2372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1379763476}
   - component: {fileID: 1379763477}
+  - component: {fileID: 1379763478}
   m_Layer: 0
   m_Name: LampLight (1)
   m_TagString: Untagged
@@ -2389,7 +2407,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6415094, g: 0.55415106, b: 0.3171235, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.01
   m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2439,6 +2457,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1379763478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379763475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1aa3600c1bbe74ebd6d5ef9c959911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1379763477}
+  isPartyEnabled: 0
+  colorOff: {r: 0, g: 0, b: 0, a: 0}
+  timeToStart: 0.4
 --- !u!64 &1431427848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3250,6 +3284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857908508}
   - component: {fileID: 1857908509}
+  - component: {fileID: 1857908510}
   m_Layer: 0
   m_Name: LampLight
   m_TagString: Untagged
@@ -3284,7 +3319,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6415094, g: 0.55415106, b: 0.3171235, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.01
   m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3323,7 +3358,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3334,6 +3369,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1857908510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857908507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1aa3600c1bbe74ebd6d5ef9c959911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1857908509}
+  isPartyEnabled: 0
+  colorOff: {r: 0, g: 0, b: 0, a: 0}
+  timeToStart: 0
 --- !u!64 &1864803608
 MeshCollider:
   m_ObjectHideFlags: 0
