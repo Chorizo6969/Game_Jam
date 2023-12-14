@@ -52,10 +52,10 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
         // Si la direction verticale (_moveDirection.y) est positive, utilise cette direction pour avancer devant
         // If the vertical direction (_moveDirection.y) is positive, use this direction to move forward
-        if (_moveDirection.y > 0)
-        {
-            Vector3 forwardDirection = cameraTransform.forward * _moveDirection.y;
-            playerTransform.Translate(forwardDirection * (speed * Time.deltaTime));
-        }
+        //if (_moveDirection.y > 0)
+        //{
+        //    Vector3 forwardDirection = cameraTransform.forward * _moveDirection.y;
+        //    playerTransform.Translate(forwardDirection * (speed * Time.deltaTime));
+        //}
     }
 }

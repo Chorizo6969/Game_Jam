@@ -1481,7 +1481,7 @@ Transform:
   m_GameObject: {fileID: 662908734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.103, y: 5.507326, z: -3.684}
+  m_LocalPosition: {x: 20.103, y: 5.507326, z: -3.635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2566,7 +2566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1492793073
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2792,8 +2792,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 0.2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2954,6 +2954,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_Iso
+      value: 203
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_Aperture
+      value: 16.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_BladeCount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: field of view
+      value: 60.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_Anamorphism
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_Curvature.x
+      value: 7.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_Curvature.y
+      value: 17.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_FocalLength
+      value: 28.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_ShutterSpeed
+      value: 3.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_FocusDistance
+      value: 18.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_RenderingPath
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_BarrelClipping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648178830351866203, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1448241287799444332, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2972,7 +3052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1979451321561722595, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.22
+      value: -11.25
       objectReference: {fileID: 0}
     - target: {fileID: 1979451321561722595, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2980,7 +3060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1979451321561722595, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.24
+      value: -7.7
       objectReference: {fileID: 0}
     - target: {fileID: 1979451321561722595, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9168,7 +9248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1089a63975e42874494591892a31fb5d, type: 2}
+  - {fileID: 2100000, guid: a2e25a565c25bd347a7ea0a91d2ab6f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
