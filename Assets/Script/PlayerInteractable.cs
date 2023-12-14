@@ -11,16 +11,18 @@ public class PlayerInteractable : MonoBehaviour
     private float distance = 3f;
     [SerializeField]
     private LayerMask mask;
+    private Player_Ui playerUI;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        playerUI = GetComponent<Player_Ui>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerUI.UpdateText(string.Empty);
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
         Debug.DrawRay(ray.origin, ray.direction * distance);
         RaycastHit hitInfo;
@@ -28,7 +30,7 @@ public class PlayerInteractable : MonoBehaviour
         {
             if (hitInfo.collider.GetComponent<Interactable>() != null)
             { 
-                Debug.Log(hitInfo.collider.GetComponent<Interactable>().promptMessage);
+                playerUI.UpdateText(hitInfo.collider.GetComponent<Interactable>().promptMessage);
             }
         }
     }
