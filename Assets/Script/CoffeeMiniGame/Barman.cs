@@ -7,6 +7,16 @@ public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
 {
     public Camera mainCamera;
 
+    public bool pickUpCoffee;
+    public bool pickUpTea;
+    public bool pickUpChocolat;
+
+    public CoffeeRequest coffeeRequest;
+    public TeaRequest teaRequest;
+    public ChocolatRequest chocolatRequest;
+
+    public GameObject drink;
+
     public void OnInteract(InputAction.CallbackContext context)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -34,7 +44,22 @@ public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
         {
             Debug.Log(gameObject.name);
         }
+
+        drink = gameObject;
+        Debug.Log(gameObject.tag + " tag");
+        Debug.Log(gameObject.name + " name");
+
     }
+    public void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.name == "Client")
+        {
+            coffeeRequest.IHaveSomething(drink);
+            teaRequest.IHaveSomething(drink);
+            chocolatRequest.IHaveSomething(drink);
+        }
+    }
+
 
     public void OnMove(InputAction.CallbackContext context) //pour l'input manager
     {

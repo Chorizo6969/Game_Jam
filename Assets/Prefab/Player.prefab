@@ -343,6 +343,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 23cfa3e0-3e17-45d3-b466-5ae9589b1f51
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9954b01f-6cb8-464a-bede-49effaca0939
+    m_ActionName: Player/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

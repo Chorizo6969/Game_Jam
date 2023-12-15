@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DropObject : MonoBehaviour
 {
-    public void DropOff()
+    public void OnTriggerEnter(Collider collider)
     {
-
+        collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 }
