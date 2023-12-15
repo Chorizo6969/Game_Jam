@@ -36,15 +36,18 @@ public class PlayerInteractable : MonoBehaviour
                 playerUI.UpdateText(interactable.promptMessage);
             }
         }
+        else
+        {
+            interactable = null;
+        }
     }
 
     public void OnInteract()
     {
-        if (inputManager.Player.Interact.triggered && interactable != null)
+        if (interactable != null)
         {
             Debug.Log("A");
             interactable.BaseInteract();
         }
     }
 }
-

@@ -4,11 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClientRequest : MonoBehaviour
-{
-    public bool iWantCoffee;
-    public bool iWantTea;
-    public bool iWantChocolat;
-
+{ 
     //public GameObject coffeeSprite;
     //public GameObject teaSprite;
     //public GameObject chocolatSprite;
@@ -19,40 +15,22 @@ public class ClientRequest : MonoBehaviour
 
         if (randomRequest <= 10)
         {
-            GiveMeCoffee();
+            //coffeeSprite.SetActive(true);
             this.AddComponent<CoffeeRequest>();
         }
 
         if (randomRequest <= 20 && randomRequest > 10)
         {
-            GiveMeTea();
+            //teaSprite.SetActive(true);
             this.AddComponent<TeaRequest>();
         }
 
         if (randomRequest > 20)
         {
-            GiveMeChocolat();
+            //chocolatSprite.SetActive(true);
             this.AddComponent<ChocolatRequest>();
         }
-    }
-    public void GiveMeCoffee()
-    {
-        iWantCoffee = true;
-        //coffeeSprite.SetActive(true);
-        StartCoroutine(WaitRequest());
-    }
 
-    public void GiveMeTea()
-    {
-        iWantTea = true;
-        //teaSprite.SetActive(true);
-        StartCoroutine(WaitRequest());
-    }
-
-    public void GiveMeChocolat()
-    {
-        iWantChocolat = true;
-        //chocolatSprite.SetActive(true);
         StartCoroutine(WaitRequest());
     }
 
