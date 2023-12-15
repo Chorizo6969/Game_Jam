@@ -1171,6 +1171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478801224}
+  - component: {fileID: 478801225}
   m_Layer: 0
   m_Name: ElevatorDoor
   m_TagString: Untagged
@@ -1195,6 +1196,27 @@ Transform:
   - {fileID: 8637600246481571162}
   m_Father: {fileID: 6069297549014870477}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &478801225
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478801223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d5aaa36179639e4aa131ff577761082, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!64 &531758391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11410,7 +11432,7 @@ Transform:
   m_GameObject: {fileID: 7332268752919493465}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.85498, y: -3.9680421, z: -1.1832286}
+  m_LocalPosition: {x: -1.766, y: -3.9680421, z: -1.1832286}
   m_LocalScale: {x: 1, y: 0.9830712, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -32,15 +32,14 @@ public class ClientGenerator : MonoBehaviour
         {
             int randomClient = Random.Range(0, clientPositionList.Count); //chiffre random entre 0 et le nombre d'élément de la liste de position de client
             Vector3 randomPos = clientPositionList[randomClient].transform.position;
-            clientPositionList.Remove(clientPositionList[randomClient]);
+            clientPositionList.Remove(clientPositionList[randomClient]); //retire le point ou le client à spawn de la liste
             Debug.Log("remove position");
             clientPrefab.transform.position = randomPos;
         }
         else
         {
-            clientPositionList.AddRange(_positionList);
+            clientPositionList.AddRange(_positionList); //rempli à nouveau la liste de points
             Debug.Log("add");
-
         }
     }
 

@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 918377435}
   - component: {fileID: 918377439}
   m_Layer: 0
-  m_Name: Bar
+  m_Name: Coffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1262,6 +1262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4baaa841b8e68d45aedc1b4cf0ad8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1155482723}
 --- !u!4 &1340700946
 Transform:
   m_ObjectHideFlags: 0
