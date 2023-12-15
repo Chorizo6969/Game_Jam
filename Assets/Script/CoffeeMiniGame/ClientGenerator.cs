@@ -51,7 +51,7 @@ public class ClientGenerator : MonoBehaviour
 
     IEnumerator WaitForNewClient()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         CreateClient();
     }
 }

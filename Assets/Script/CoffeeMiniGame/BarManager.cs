@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BarManager : MonoBehaviour
@@ -16,29 +15,33 @@ public class BarManager : MonoBehaviour
             return _instance;
         }
     }
+
     public void Awake()
     {
         _instance = this;
     }
 
-    public int satifactionClient;
-    public bool clientGoAway;
+    public TextMeshProUGUI satisfactionText;
+
+    public int satisfactionClient;
 
     public void Start()
     {
         ClientGenerator.Instance.CreateClient();
     }
-    public void TimeTooLong()
+    public void AngryClient()
     {
-        satifactionClient--;
-        Debug.Log("angryClient");
-        clientGoAway = true;
+        satisfactionClient--;
+        UpdateText();
     }
     public void HappyClient()
     {
-        satifactionClient++;
-        clientGoAway = true;
-        Debug.Log("happyClient");
+        satisfactionClient++;
+        UpdateText();
+    }
 
+    public void UpdateText()
+    {
+        satisfactionText.text = "Satisfaction client : " + satisfactionClient.ToString();
     }
 }
