@@ -1,21 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class Player_Ui : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI promptText;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] //permet de voir dans l'inspecteur le champ promptText et de le remplir (malgré le fait qu'il soit privé)
+    private TextMeshProUGUI promptText; //Affiche le message de ce qu'est l'objet (ex: "E" Ours en peluche)
     public void UpdateText(string promptMessage)
     {
         promptText.text = promptMessage;

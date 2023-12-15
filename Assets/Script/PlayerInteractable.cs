@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerInteractable : MonoBehaviour
@@ -10,20 +7,18 @@ public class PlayerInteractable : MonoBehaviour
     [SerializeField]
     private float distance = 3f;
     [SerializeField]
-    private LayerMask mask;
+    private LayerMask mask; //C'est pour vérifier le layer plus tard
     private Player_Ui playerUI;
-    private PlayerInput inputManager;
-    private Interactable interactable;  //test pour savoir si elle est visible
+    private Interactable interactable;  //variable sur un objet qui est interactible
 
     void Start()
     {
         playerUI = GetComponent<Player_Ui>();
     }
-
     void Update()
     {
         playerUI.UpdateText(string.Empty);
-        Ray ray = new Ray(cam.transform.position, cam.transform.forward);
+        Ray ray = new Ray(cam.transform.position, cam.transform.forward); //Création RayCast
         Debug.DrawRay(ray.origin, ray.direction * distance * 3);//Pour changer le Raycast
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, distance * 2, mask)) //Pour changer la portée de détection du Raycast
@@ -39,12 +34,11 @@ public class PlayerInteractable : MonoBehaviour
             interactable = null; // Sinon interactable devient nulle et n'affiche donc rien
         }
     }
-
     public void OnInteract() //Lorsque l'on appuie sur "E" sur un objet
     {
         if (interactable != null)
         {
-            Debug.Log("A");
+            Debug.Log("A");//test
             interactable.BaseInteract();
         }
     }

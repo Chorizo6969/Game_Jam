@@ -1,15 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+//Script enfant de Interacable (et non de MonoBehaviour)
 using UnityEngine;
-using TMPro;
-
 
 public class Destroy : Interactable
 {
-    public GameObject GO;
-
-    protected override void Interact()
+    public GameObject gameobject;
+    protected override void Interact()//fct qui permet de détruire un object lorsque l'on interagit avec lui
     {
-        Destroy(GO);
+        Destroy(gameobject);
     }
 }
