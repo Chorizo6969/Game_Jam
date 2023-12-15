@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: herbe
+  m_Name: monolith
   m_Shader: {fileID: -6465566751694194690, guid: 7f87fb5d99b82694cbb547a1d6b32a63, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -48,10 +48,10 @@ Material:
     - _min: 0.3
     - _shades: 0.49
     m_Colors:
-    - _color: {r: 0.6723107, g: 0.77254903, b: 0.32941177, a: 0}
+    - _color: {r: 0.06710942, g: 0.234, b: 0.17666869, a: 0}
     - _fogColor: {r: 0.8039216, g: 0.654902, b: 0.7490196, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &2682916204712758755
+--- !u!114 &6128609079654961813
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

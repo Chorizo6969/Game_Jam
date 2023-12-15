@@ -62,5 +62,5 @@ Material:
     - _shades: 0.49
     m_Colors:
     - _color: {r: 0.32941177, g: 0.70087016, b: 0.77254903, a: 0}
-    - _fogColor: {r: 0.5566872, g: 0.7830189, b: 0.2910466, a: 0}
+    - _fogColor: {r: 0.80300003, g: 0.65444505, b: 0.7486036, a: 0}
   m_BuildTextureStacks: []
