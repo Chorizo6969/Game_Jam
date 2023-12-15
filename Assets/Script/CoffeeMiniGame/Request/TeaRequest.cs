@@ -6,17 +6,17 @@ public class TeaRequest : MonoBehaviour
 {
     public void IHaveSomething(GameObject gameObject)
     {
-        if (gameObject.name == "Tea")
+        if (gameObject.tag == "tea")
         {
             BarManager.Instance.clientGoAway = false;
             BarManager.Instance.HappyClient();
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         else
         {
             BarManager.Instance.clientGoAway = false;
             BarManager.Instance.TimeTooLong();
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
