@@ -20,6 +20,22 @@ public class Dialogue : MonoBehaviour
 
     bool isPressed;
 
+private static Dialogue _instance;
+    public static Dialogue Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                Debug.Log("NomScript is null");
+            }
+            return _instance;
+        }
+    }
+    public void Awake()
+    {
+        _instance = this;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
