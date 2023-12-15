@@ -9,7 +9,7 @@ public class Dialogue : MonoBehaviour
     public float Delay;
     public List<string> dialogueList;
     public GameObject fauxPanel;
-    public bool Detruire = true;
+    public bool Detruire = false;
     public GameObject Roger;
 
     Coroutine maCoroutine;
@@ -58,9 +58,9 @@ private static Dialogue _instance;
 
     public void Activate()
     {
+        fauxPanel.SetActive(true);
         isPressed = true;
-        current = (dialogueList[Compte]);
-        Compte++;
+        current = (dialogueList[0]);
         AfficheTexte();
     }
 
@@ -76,10 +76,7 @@ private static Dialogue _instance;
             fauxPanel.SetActive(false);
             isPressed = false;
             Compte = 0;
-            if (Detruire)
-            {
-                Destroy(Roger);
-            }
+            Destroy(Roger);
         }
         else
         {
@@ -95,11 +92,6 @@ private static Dialogue _instance;
         monTexte.maxVisibleCharacters = 0;
         maCoroutine = StartCoroutine(TexteLettreParLettre());
     }
-
-    /*IEnumerator Attente(float delai)
-    {
-        yield return new WaitForSeconds(delai);
-    }*/
 
     public void OnDisable()
     {
