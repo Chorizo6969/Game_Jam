@@ -47,8 +47,12 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     void Update()
     {
-        Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
-        playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
+        if(HotelManager.Instance.canMove)
+        {
+            Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
+            playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
+        }
+        
 
         // Si la direction verticale (_moveDirection.y) est positive, utilise cette direction pour avancer devant
         // If the vertical direction (_moveDirection.y) is positive, use this direction to move forward
