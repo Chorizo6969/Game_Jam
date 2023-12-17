@@ -22,7 +22,7 @@ public class HotelManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         // ajouté animation tremblement de terre
         this.GetComponentInChildren<Dialogue>().Activate();
