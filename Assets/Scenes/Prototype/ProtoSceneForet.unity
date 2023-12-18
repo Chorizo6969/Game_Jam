@@ -342,6 +342,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
+  canMove: 0
 --- !u!1001 &214561824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,6 +539,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
+  canMove: 0
 --- !u!1 &264424297
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +713,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 279741157}
+  canMove: 0
 --- !u!1 &283631633
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +858,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
+  canMove: 0
 --- !u!1 &508047548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1861,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
+  canMove: 0
 --- !u!1 &1655776573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2291,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
+  canMove: 0
 --- !u!1 &2085599000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,6 +2386,7 @@ MonoBehaviour:
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 2112842016}
+  canMove: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

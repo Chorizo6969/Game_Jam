@@ -4,6 +4,12 @@ using UnityEngine;
 public class Destroy : Interactable
 {
     public GameObject _gameobject;
+
+    void Start()
+    {
+        Dialogue.Instance.canMove = false;
+    }
+
     protected override void Interact()//fct qui permet de détruire un object lorsque l'on interagit avec lui
     {
         Debug.Log(_gameobject.transform.parent.gameObject.name);
