@@ -851,7 +851,7 @@ MonoBehaviour:
   monTexte: {fileID: 214561825}
   Delay: 0
   dialogueList:
-  - "Je lancer souvent des avions en papier avec mes parents dans une for\xEAt"
+  - "Je lan\xE7ais souvent des avions en papier avec mes parents dans une for\xEAt"
   fauxPanel: {fileID: 214561826}
   Detruire: 0
   Roger: {fileID: 0}
