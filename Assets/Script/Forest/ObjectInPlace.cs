@@ -6,6 +6,9 @@ public class ObjectInPlace : MonoBehaviour
 {
     public void OnTriggerEnter(Collider collider)
     {
-        ForestManager.Instance.ObjectInHisPlace();
+        if (collider.gameObject.name == this.gameObject.name)
+        {
+            ForestManager.Instance.ObjectInHisPlace();
+        }
     }
 }
