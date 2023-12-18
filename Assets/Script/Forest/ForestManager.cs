@@ -30,6 +30,7 @@ public class ForestManager : MonoBehaviour
     public void Start()
     {
         //this.GetComponentInChildren<Dialogue>().Activate();
+        objectPickUp.Clear();
     }
     public void ObjectInHisPlace()
     {
