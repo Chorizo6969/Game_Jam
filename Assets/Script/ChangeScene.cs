@@ -17,4 +17,13 @@ public class ChangeScene : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void CreditsScene()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    public void MainMenueScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
