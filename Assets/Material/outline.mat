@@ -39,8 +39,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _outline: 0.1
-    - _outlineDivide: 1
+    - _outline: 0.00119
+    - _outlineDivide: 20
     m_Colors:
     - _outlineFogColor: {r: 0.8039216, g: 0.654902, b: 0.7490196, a: 0}
     - _outline_color: {r: 0, g: 0, b: 0, a: 0}
