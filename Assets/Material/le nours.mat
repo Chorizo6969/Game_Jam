@@ -60,7 +60,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _divide: 100
+    - _divide: 20
     - _max: 1
     - _min: 0.3
     - _outline: 0.3
