@@ -197,13 +197,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25805896}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.011200302, y: 0.22074828, z: -0.07077839, w: 0.9726949}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.034189314, y: -0.4168343, z: -0.06297713, w: 0.9061535}
+  m_LocalPosition: {x: -0.43, y: -0.74, z: 0.28}
   m_LocalScale: {x: 1.1170809, y: 1.0556097, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2112842017}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.573, y: -49.121, z: -4.945}
 --- !u!114 &25805898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer l'ours en peluche"
-  _gameobject: {fileID: 25805896}
+  _gameObject: {fileID: 0}
 --- !u!64 &25805899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5342852044557126960, guid: 807b615161feeb0498ecb011bb0bf660, type: 3}
 --- !u!23 &25805900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6642cad77ba6b8943ab2489ce22f87d9, type: 2}
+  - {fileID: 2100000, guid: 488d6215c685dd84cabf4e03090955d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -289,7 +289,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25805896}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5342852044557126960, guid: 807b615161feeb0498ecb011bb0bf660, type: 3}
 --- !u!1 &46573317
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer l'avion"
-  _gameobject: {fileID: 264424297}
+  _gameObject: {fileID: 0}
 --- !u!64 &264424300
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer la veste"
-  _gameobject: {fileID: 825983095}
+  _gameObject: {fileID: 0}
 --- !u!64 &825983098
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer l'avion en papier"
-  _gameobject: {fileID: 937127490}
+  _gameObject: {fileID: 0}
 --- !u!64 &937127493
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1660,13 +1660,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430177356}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.011200302, y: 0.22074828, z: -0.07077839, w: 0.9726949}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.08791774, y: -0.18092495, z: -0.050515756, w: 0.97825605}
+  m_LocalPosition: {x: 0.34, y: -0.56, z: -1.13}
   m_LocalScale: {x: 1.1170809, y: 1.0556097, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2055748068}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.843, y: -21.545, z: -7.598}
 --- !u!114 &1430177358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,7 +1680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer le k\xE9pi"
-  _gameobject: {fileID: 1430177356}
+  _gameObject: {fileID: 0}
 --- !u!64 &1430177359
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1702,7 +1702,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 9096261547942271568, guid: 39c1f79b19027654192a25223b5b6d3a, type: 3}
 --- !u!23 &1430177360
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1723,7 +1723,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6642cad77ba6b8943ab2489ce22f87d9, type: 2}
+  - {fileID: 2100000, guid: 19f7a16468a916f4f8ee40eeb36429ce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1752,7 +1752,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430177356}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 9096261547942271568, guid: 39c1f79b19027654192a25223b5b6d3a, type: 3}
 --- !u!1 &1572414214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1316691077793418780, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer le manuel"
-  _gameobject: {fileID: 1708647710}
+  _gameObject: {fileID: 0}
 --- !u!64 &1708647713
 MeshCollider:
   m_ObjectHideFlags: 0
