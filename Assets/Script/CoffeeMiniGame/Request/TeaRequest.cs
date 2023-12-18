@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class TeaRequest : MonoBehaviour
 {
-    public void IHaveSomething(GameObject gameObject)
+    public void OnTriggerEnter(Collider collider)
     {
-        if (gameObject.tag == "tea")
+        if (collider.tag == "tea")
         {
-            BarManager.Instance.clientGoAway = false;
             BarManager.Instance.HappyClient();
             Destroy(this.gameObject);
         }
         else
         {
-            BarManager.Instance.clientGoAway = false;
-            BarManager.Instance.TimeTooLong();
+            BarManager.Instance.AngryClient();
             Destroy(this.gameObject);
         }
     }

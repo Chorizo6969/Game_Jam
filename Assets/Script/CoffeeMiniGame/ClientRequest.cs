@@ -1,13 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClientRequest : MonoBehaviour
 { 
-    //public GameObject coffeeSprite;
-    //public GameObject teaSprite;
-    //public GameObject chocolatSprite;
 
     public void Start()
     {
@@ -15,13 +11,13 @@ public class ClientRequest : MonoBehaviour
 
         if (randomRequest <= 10)
         {
-            //coffeeSprite.SetActive(true);
+            this.transform.GetChild(0).gameObject.SetActive(true);
             this.AddComponent<CoffeeRequest>();
         }
 
         if (randomRequest <= 20 && randomRequest > 10)
         {
-            //teaSprite.SetActive(true);
+            this.transform.GetChild(1).gameObject.SetActive(true);
             this.AddComponent<TeaRequest>();
         }
 
@@ -36,7 +32,7 @@ public class ClientRequest : MonoBehaviour
 
     IEnumerator WaitRequest()
     {
-        yield return new WaitForSeconds(2);
-        BarManager.Instance.TimeTooLong();
+        yield return new WaitForSeconds(50);
+        BarManager.Instance.AngryClient();
     }
 }

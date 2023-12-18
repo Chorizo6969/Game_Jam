@@ -1,65 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
 {
     public Camera mainCamera;
+    public TextMeshProUGUI drinkText;
+    public LayerMask mask;
+    public float distance;
 
-    public bool pickUpCoffee;
-    public bool pickUpTea;
-    public bool pickUpChocolat;
-
-    public CoffeeRequest coffeeRequest;
-    public TeaRequest teaRequest;
-    public ChocolatRequest chocolatRequest;
-
-    public GameObject drink;
+    private string player = "Player";
+    private string coffee= "coffee";
+    private string tea = "tea";
+    private string chocolat = "chocolat";
 
     public void OnInteract(InputAction.CallbackContext context)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit,distance, mask))
         {
             TouchSomething(hit.transform.gameObject);
         }
     }
 
-    public void TouchSomething(GameObject gameObject)
+    public void TouchSomething(GameObject drink)
     {
-        if (gameObject.name == "Coffee")
+
+        if (drink.name == "Coffee")
         {
-            Debug.Log(gameObject.name);
+            gameObject.tag = coffee;
         }
 
-        if (gameObject.name == "Tea")
+        if (drink.name == "Tea")
         {
-            Debug.Log(gameObject.name);
+            gameObject.tag = tea;
         }
 
-        if (gameObject.name == "Chocolat")
+        if (drink.name == "Chocolat")
         {
-            Debug.Log(gameObject.name);
+            gameObject.tag = chocolat;
         }
 
-        drink = gameObject;
-        Debug.Log(gameObject.tag + " tag");
-        Debug.Log(gameObject.name + " name");
-
+        drinkText.text = drink.name;
     }
+
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.name == "Client")
-        {
-            coffeeRequest.IHaveSomething(drink);
-            teaRequest.IHaveSomething(drink);
-            chocolatRequest.IHaveSomething(drink);
-        }
+        gameObject.tag = player;
+        drinkText.text = "none";
     }
-
 
     public void OnMove(InputAction.CallbackContext context) //pour l'input manager
     {
