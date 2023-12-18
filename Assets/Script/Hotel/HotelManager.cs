@@ -27,6 +27,5 @@ public class HotelManager : MonoBehaviour
         Debug.Log("HotelManager");
         // ajouté animation tremblement de terre
         this.GetComponentInChildren<Dialogue>().Activate();
-        canMove = true;
     }
 }

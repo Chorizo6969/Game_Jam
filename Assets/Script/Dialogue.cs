@@ -18,8 +18,9 @@ public class Dialogue : MonoBehaviour
     private string current;
 
     bool isPressed;
+    public bool canMove = false;
 
-private static Dialogue _instance;
+    private static Dialogue _instance;
     public static Dialogue Instance
     {
         get
@@ -35,6 +36,7 @@ private static Dialogue _instance;
     {
         _instance = this;
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -69,6 +71,7 @@ private static Dialogue _instance;
         if (Compte > dialogueList.Count)
         {
             Debug.Log("liste finie");
+            canMove = true;
         }
         if (Compte == dialogueList.Count)
         {
@@ -76,6 +79,8 @@ private static Dialogue _instance;
             fauxPanel.SetActive(false);
             isPressed = false;
             Compte = 0;
+            //canMove = true;
+            Debug.Log(canMove);
             Destroy(Roger);
         }
         else
@@ -84,10 +89,8 @@ private static Dialogue _instance;
             Compte++;
         }
     }
-
     public void AfficheTexte()
     {
-
         monTexte.text = current;
         monTexte.maxVisibleCharacters = 0;
         maCoroutine = StartCoroutine(TexteLettreParLettre());
@@ -96,6 +99,7 @@ private static Dialogue _instance;
     public void OnDisable()
     {
         monTexte.text = null;
+        canMove = true;
     }
 
     IEnumerator TexteLettreParLettre()
