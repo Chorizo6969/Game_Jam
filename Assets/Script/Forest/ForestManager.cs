@@ -24,6 +24,7 @@ public class ForestManager : MonoBehaviour
     }
 
     public int numberObject;
+    public List<GameObject> objectRecup;
 
     public void Start()
     {
@@ -33,5 +34,4 @@ public class ForestManager : MonoBehaviour
     {
         numberObject++;
     }
-
 }
