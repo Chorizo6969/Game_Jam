@@ -24,11 +24,12 @@ public class ForestManager : MonoBehaviour
     }
 
     public int numberObject;
-    public List<GameObject> objectRecup;
+
+    public List<GameObject> objectPickUp;
 
     public void Start()
     {
-        this.GetComponentInChildren<Dialogue>().Activate();
+        //this.GetComponentInChildren<Dialogue>().Activate();
     }
     public void ObjectInHisPlace()
     {
