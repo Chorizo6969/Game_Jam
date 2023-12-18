@@ -391,14 +391,26 @@ MonoBehaviour:
     m_ActionId: 23cfa3e0-3e17-45d3-b466-5ae9589b1f51
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4302539530610413607}
+        m_TargetAssemblyTypeName: PlayerInteractable, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 9954b01f-6cb8-464a-bede-49effaca0939
     m_ActionName: Player/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 648178830351866203}
 --- !u!114 &4302539530610413607
 MonoBehaviour:
   m_ObjectHideFlags: 0
