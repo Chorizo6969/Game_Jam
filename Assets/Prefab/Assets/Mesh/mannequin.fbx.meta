@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/Prefab/Assets/Mesh/mannequin.fbx.meta
+<<<<<<<< HEAD:Assets/Prefab/Assets/Mesh/mannequin.fbx.meta
 guid: 28fd52a4215befc4e847757a70504f8a
 ========
 guid: 02c86cddd47d6ea46bb9025b58c88a2e
 >>>>>>>> e856d0b (light + deriniere correction prologue):Assets/Scenes/piece_entree_Vfini2.fbx.meta
+========
+guid: 02c86cddd47d6ea46bb9025b58c88a2e
+>>>>>>>> e856d0bff4fa748b1e568ab16d205220133ff4f4:Assets/Scenes/piece_entree_Vfini2.fbx.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
