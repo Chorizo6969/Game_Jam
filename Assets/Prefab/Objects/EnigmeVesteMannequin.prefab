@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4456066780878410169}
+  - component: {fileID: 3689508814710787999}
   m_Layer: 0
   m_Name: EnigmeVesteMannequin
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 5998097083838042251}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3689508814710787999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272308071590118699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.41362, y: 7.66422, z: 8.17123}
+  m_Center: {x: 0.5656204, y: 3.33211, z: 1.7224636}
 --- !u!1001 &1093764355212868694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50,15 +72,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6633891751491497181, guid: cc3c11e5c7c8e9c41b4f04e0a55a13a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4863162
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 6633891751491497181, guid: cc3c11e5c7c8e9c41b4f04e0a55a13a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.27
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 6633891751491497181, guid: cc3c11e5c7c8e9c41b4f04e0a55a13a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.31
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 6633891751491497181, guid: cc3c11e5c7c8e9c41b4f04e0a55a13a4, type: 3}
       propertyPath: m_LocalRotation.w
