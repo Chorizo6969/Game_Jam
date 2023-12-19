@@ -27,7 +27,7 @@ public class Dialogue : MonoBehaviour
         {
             if (_instance == null)
             {
-                Debug.Log("NomScript is null");
+                //Debug.Log("NomScript is null");
             }
             return _instance;
         }
@@ -60,6 +60,7 @@ public class Dialogue : MonoBehaviour
 
     public void Activate()
     {
+        canMove = false;
         fauxPanel.SetActive(true);
         isPressed = true;
         current = (dialogueList[0]);
@@ -71,7 +72,7 @@ public class Dialogue : MonoBehaviour
         if (Compte > dialogueList.Count)
         {
             Debug.Log("liste finie");
-            canMove = true;
+            //canMove = true;
         }
         if (Compte == dialogueList.Count)
         {
@@ -99,7 +100,7 @@ public class Dialogue : MonoBehaviour
     public void OnDisable()
     {
         monTexte.text = null;
-        canMove = true;
+        //canMove = true;
     }
 
     IEnumerator TexteLettreParLettre()

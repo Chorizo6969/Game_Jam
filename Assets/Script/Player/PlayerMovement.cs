@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     void Start()
     {
         Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        /*if(Dialogue.Instance.canMove == true)
-        {*/
+        //if (Dialogue.Instance.canMove == true) ;
+        //{
             _lookDirection = context.ReadValue<Vector2>();
 
             lookY = Mathf.Clamp(lookY, minHeadRotate, maxHeadRotate);
@@ -51,8 +51,8 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     void Update()
     {
-        /*if(Dialogue.Instance.canMove == true)
-        {*/
+        //if (Dialogue.Instance.canMove == true)
+        //{
             Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
             playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
         //}
