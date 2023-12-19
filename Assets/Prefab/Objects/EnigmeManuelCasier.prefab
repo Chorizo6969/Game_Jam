@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 856561535710835440}
+  - component: {fileID: 4752773253172250454}
   m_Layer: 0
   m_Name: EnigmeManuelCasier
   m_TagString: Untagged
@@ -35,6 +36,27 @@ Transform:
   - {fileID: 21259166946875714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4752773253172250454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2978285569725703229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.4214325, y: 8.856504, z: 8.126049}
+  m_Center: {x: 2.998558, y: -5.6060295, z: 2.9914188}
 --- !u!1001 &1573788734531353553
 PrefabInstance:
   m_ObjectHideFlags: 0
