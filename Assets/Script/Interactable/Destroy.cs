@@ -4,9 +4,23 @@ using UnityEngine;
 public class Destroy : Interactable
 {
     public GameObject _gameObject;
-    protected override void Interact()//fct qui permet de détruire un object lorsque l'on interagit avec lui
+    protected override void Interact()//fct qui permet de dï¿½truire un object lorsque l'on interagit avec lui
     {
         ForestManager.Instance.objectPickUp.Add(_gameObject);
+
+        for (int i = 0; i < ForestManager.Instance.objectPickUp.Count; i++)
+        {
+            if (ForestManager.Instance.objectPickUp[i].name == GetComponent<Collider>().gameObject.name)
+            {
+                GetComponent<Collider>().gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                ForestManager.Instance.objectPickUp.Remove(GetComponent<Collider>().gameObject);
+                break;
+            }
+            else
+            {
+                break;
+            }
+        }
         //Debug.Log(_gameObject.transform.parent.gameObject.name);
         this.GetComponentInParent<Dialogue>().Activate();
         //Dialogue.Instance.Activate();
