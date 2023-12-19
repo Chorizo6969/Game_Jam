@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class Blinking : MonoBehaviour
 {
-    public Light light;
+    //public Light light;
     public bool isPartyEnabled = false;
-    public Color colorOff;
+    public GameObject _light;
     public float timeToStart;
 
     // Start is called before the first frame update
     void Start()
     {
-        light = GetComponent<Light>();
+        //light = GetComponent<Light>();
     }
 
     void FixedUpdate()
@@ -26,18 +26,18 @@ public class Blinking : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToStart);
         isPartyEnabled = true;
-        light.color = new Color(164, 141, 81);
+        _light.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        _light.SetActive(false);
         yield return new WaitForSeconds(1f);
-        light.color = colorOff;
-        yield return new WaitForSeconds(0.5f);
-        light.color = new Color(164, 141, 81);
-        yield return new WaitForSeconds(0.6f);
-        light.color = colorOff;
-        yield return new WaitForSeconds(0.4f);
-        light.color = new Color(164, 141, 81);
+        _light.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        _light.SetActive(false);
         yield return new WaitForSeconds(0.8f);
-        light.color = colorOff;
-        yield return new WaitForSeconds(0.3f);
+        _light.SetActive(true);
+        yield return new WaitForSeconds(1.6f);
+        _light.SetActive(false);
+        yield return new WaitForSeconds(0.6f);
         isPartyEnabled = false;
     }
 }
