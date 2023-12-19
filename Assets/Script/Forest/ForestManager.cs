@@ -24,6 +24,7 @@ public class ForestManager : MonoBehaviour
     }
 
     public int numberObject;
+    public List<GameObject> objectInInventory;
 
     public List<GameObject> objectPickUp;
 
