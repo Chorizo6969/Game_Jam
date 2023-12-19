@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 1332685357}
-  Delay: 0
+  Delay: 0.1
   dialogueList:
   - Qu'est-ce qu'il se passe ici ?
   - Pourquoi le sol tremble soudainement ?
@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cuperer l'ours en peluche"
-  _gameObject: {fileID: 0}
+  _gameObject: {fileID: 1034801394}
 --- !u!23 &1034801398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -929,6 +929,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 794648500786663855, guid: 5861764cf334eb14a8643aab5959b7d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1005911251786717333, guid: 5861764cf334eb14a8643aab5959b7d1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -12.924561
@@ -1234,6 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberObject: 0
+  objectInInventory: []
   objectPickUp: []
 --- !u!1 &1534746743
 GameObject:
@@ -1655,7 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 1332685357}
-  Delay: 0.2
+  Delay: 0.1
   dialogueList:
   - "Qu'est-ce que cet ours en peluche rose fait l\xE0 ?!"
   - Etrangement, il me rappelle vaguement quelque chose...
