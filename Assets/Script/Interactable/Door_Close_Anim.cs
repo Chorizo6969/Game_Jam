@@ -7,9 +7,10 @@ public class Door_Close_Anim : Interactable
 {
     public GameObject GO;
     public Animator anim;
+    public GameObject BoxcolliderElevator;
     protected override void Interact()//Cette fct Interact permet de lancer la fermeture (et donc l'animation) de la porte
     {
-        Debug.Log("test");//test
+        BoxcolliderElevator.SetActive(true);
         anim.SetBool("Click", false); //Permet cette fois de remplir la condition pour lancer l'animation dans l'Animator
         StartCoroutine(SpawnDelay());
     }
