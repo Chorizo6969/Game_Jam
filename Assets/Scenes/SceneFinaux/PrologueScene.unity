@@ -132,7 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28695282}
-  m_Layer: 0
+  - component: {fileID: 28695283}
+  m_Layer: 6
   m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,6 +157,19 @@ Transform:
   - {fileID: 3500188565676592449}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28695283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28695281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: '"E" Ouvrir la porte'
 --- !u!1 &193250384
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +456,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5250928462288757567, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -206.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250928462288757567, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -251.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6657220333573324987, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1458,7 +1480,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1578992966}
-  m_Layer: 0
+  - component: {fileID: 1578992968}
+  - component: {fileID: 1578992967}
+  m_Layer: 6
   m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,6 +1506,38 @@ Transform:
   - {fileID: 3367541579267435623}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578992967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578992965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: 
+--- !u!114 &1578992968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578992965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monTexte: {fileID: 0}
+  Delay: 0
+  dialogueList: []
+  fauxPanel: {fileID: 0}
+  Detruire: 0
+  Roger: {fileID: 0}
+  canMove: 0
 --- !u!1 &1688448696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,7 +2497,9 @@ GameObject:
   - component: {fileID: 6071972108783235929}
   - component: {fileID: 5318701250435905754}
   - component: {fileID: 6071972108783235930}
-  m_Layer: 0
+  - component: {fileID: 6071972108783235932}
+  - component: {fileID: 6071972108783235931}
+  m_Layer: 6
   m_Name: porte.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3545,6 +3603,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6448144779022115340, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!114 &6071972108783235931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895938734526388248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monTexte: {fileID: 501907625}
+  Delay: 0.02
+  dialogueList:
+  - "La porte est verrouill\xE9e."
+  - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
+  fauxPanel: {fileID: 501907623}
+  Detruire: 0
+  Roger: {fileID: 0}
+  canMove: 0
+--- !u!114 &6071972108783235932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895938734526388248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: '"E" Ouvrir la porte'
 --- !u!4 &6113563223518043123
 Transform:
   m_ObjectHideFlags: 0
@@ -4048,7 +4140,9 @@ GameObject:
   - component: {fileID: 6135467237358954109}
   - component: {fileID: 7978657648897515228}
   - component: {fileID: 8037079877462191395}
-  m_Layer: 0
+  - component: {fileID: 8037079877462191397}
+  - component: {fileID: 8037079877462191396}
+  m_Layer: 6
   m_Name: 'poigner '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4077,6 +4171,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8992944810841836755, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!114 &8037079877462191396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037079877462191394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monTexte: {fileID: 501907625}
+  Delay: 0.02
+  dialogueList:
+  - "La porte est verrouill\xE9e."
+  - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
+  fauxPanel: {fileID: 501907623}
+  Detruire: 0
+  Roger: {fileID: 0}
+  canMove: 0
+--- !u!114 &8037079877462191397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037079877462191394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: '"E" Ouvrir la porte'
 --- !u!23 &8042348652665142588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4302,7 +4430,9 @@ GameObject:
   - component: {fileID: 8649884683489955950}
   - component: {fileID: 5310188360146089322}
   - component: {fileID: 8649884683489955951}
-  m_Layer: 0
+  - component: {fileID: 8649884683489955953}
+  - component: {fileID: 8649884683489955952}
+  m_Layer: 6
   m_Name: porte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4650,6 +4780,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3006679650415964266, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!114 &8649884683489955952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168024266912983027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monTexte: {fileID: 501907625}
+  Delay: 0.02
+  dialogueList:
+  - "La porte est verrouill\xE9e."
+  - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
+  fauxPanel: {fileID: 501907623}
+  Detruire: 0
+  Roger: {fileID: 0}
+  canMove: 0
+--- !u!114 &8649884683489955953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168024266912983027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: '"E" Ouvrir la porte'
 --- !u!33 &8656537922384824260
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4700,7 +4864,9 @@ GameObject:
   - component: {fileID: 8727422095889556926}
   - component: {fileID: 5976880263115668795}
   - component: {fileID: 8727422095889556927}
-  m_Layer: 0
+  - component: {fileID: 8727422095889556929}
+  - component: {fileID: 8727422095889556928}
+  m_Layer: 6
   m_Name: poigner .001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4779,6 +4945,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2794996424696587746, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!114 &8727422095889556928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687547672544174219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: '"E" Ouvrir la porte'
+--- !u!114 &8727422095889556929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687547672544174219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monTexte: {fileID: 501907625}
+  Delay: 0.02
+  dialogueList:
+  - "La porte est verrouill\xE9e."
+  - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
+  fauxPanel: {fileID: 501907623}
+  Detruire: 0
+  Roger: {fileID: 0}
+  canMove: 0
 --- !u!4 &8744199864099062487
 Transform:
   m_ObjectHideFlags: 0
