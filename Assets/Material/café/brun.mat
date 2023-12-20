@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "caf\xE9"
+  m_Name: brun
   m_Shader: {fileID: -6465566751694194690, guid: 7f87fb5d99b82694cbb547a1d6b32a63, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,11 +24,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _normal_map:
-        m_Texture: {fileID: 2800000, guid: 77e92356574f5be44bf530bb67bb7553, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texture:
-        m_Texture: {fileID: 2800000, guid: d664724726bd4214c9996b578b9d9d91, type: 3}
+        m_Texture: {fileID: 2800000, guid: 18ccd9d0d68d8584b93d3caf1927318b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -56,7 +56,7 @@ Material:
     - _color: {r: 1, g: 1, b: 1, a: 0}
     - _fogColor: {r: 0.08235294, g: 0.5647059, b: 0.43137255, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4265900123119339995
+--- !u!114 &2554710874877786781
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
