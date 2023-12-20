@@ -9,5 +9,6 @@ public class Door_Open_Anim : Interactable
     {
         Debug.Log("test"); //test
         anim.SetBool("Click", true);//remplit la condition pour pouvoir démarrer l'animation dans Animator
+        this.GetComponent<Dialogue>().Activate();
     }
 }

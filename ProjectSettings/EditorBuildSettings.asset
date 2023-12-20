@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 228616a7c36841c44a1a2710d96bcfa8
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Test Scene/Test Mat\xE9o/test mat\xE9o.unity"
     guid: 89916ed5d25851d4f9de06bd9cae207f
   - enabled: 0
     path: Assets/Scenes/Prototype/ProtoScenePrologue.unity
     guid: 4cb0a146ed0cd0a44af744d347211edd
+  - enabled: 1
+    path: Assets/Scenes/SceneFinaux/PrologueScene.unity
+    guid: d25f32d498ff0684fb02b76a8a6dfb9e
   - enabled: 1
     path: Assets/Scenes/Prototype/ProtoSceneForet.unity
     guid: c749c5e6fd5e0234d8c2df543652f697
