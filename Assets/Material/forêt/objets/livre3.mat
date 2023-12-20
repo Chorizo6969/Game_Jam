@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5424005592900236300
+--- !u!114 &-1752578611374856997
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: le nours
+  m_Name: livre3
   m_Shader: {fileID: -6465566751694194690, guid: 7f87fb5d99b82694cbb547a1d6b32a63, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texture:
-        m_Texture: {fileID: 2800000, guid: f86d6b29b7ed84b43affd28c7ef05ef9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 19c726d867b45cc48acc89c7a800ba16, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -60,12 +60,12 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _divide: 20
+    - _divide: 30
     - _max: 1
     - _min: 0.3
     - _outline: 0.3
     - _shades: 0.49
     m_Colors:
     - _color: {r: 1, g: 1, b: 1, a: 0}
-    - _fogColor: {r: 0.5566872, g: 0.7830189, b: 0.2910466, a: 0}
+    - _fogColor: {r: 0.8039216, g: 0.654902, b: 0.7490196, a: 0}
   m_BuildTextureStacks: []
