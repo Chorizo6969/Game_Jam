@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: outline foret
+  m_Name: outline foret petits objets
   m_Shader: {fileID: -6465566751694194690, guid: 3bcf15f3422a3a943a433eef92cf0aed, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -39,7 +39,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _outline: 0.0002
+    - _outline: 0.001
     - _outlineDivide: 30
     m_Colors:
     - _outlineFogColor: {r: 0.8039216, g: 0.654902, b: 0.7490196, a: 0}
