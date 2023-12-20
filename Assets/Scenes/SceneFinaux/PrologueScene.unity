@@ -264,14 +264,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.1
   dialogueList:
   - Qu'est-ce qu'il se passe ici ?
   - Pourquoi le sol tremble soudainement ?
   - "Les alarmes stridentes et les lumi\xE8res clignotantes me mettent hors de moi."
   - Il faut que je partes d'ici !
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 272907260}
   canMove: 0
 --- !u!1 &300432501
@@ -1015,14 +1013,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.1
   dialogueList:
   - "Qu'est-ce que cet ours en peluche rose fait l\xE0 ?!"
   - Etrangement, il me rappelle vaguement quelque chose...
   - Enfin ...
   - Ce n'est pas important.
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 1948651135}
   canMove: 0
 --- !u!1 &1101740403
@@ -1378,11 +1374,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0
   dialogueList:
   - Est-ce que c'est l'unique moyen de sortir d'ici ?
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 1550684132}
   canMove: 0
 --- !u!114 &1552382124
@@ -1533,10 +1527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 0}
-  Delay: 0
   dialogueList: []
   fauxPanel: {fileID: 0}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!1 &1688448696
@@ -2262,6 +2254,7 @@ GameObject:
   - component: {fileID: 5474508972264593903}
   - component: {fileID: 6285909534304271551}
   - component: {fileID: 8697174879740153477}
+  - component: {fileID: 8697174879740153478}
   m_Layer: 6
   m_Name: porte1
   m_TagString: Untagged
@@ -3619,12 +3612,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &6071972108783235932
@@ -4187,12 +4178,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &8037079877462191397
@@ -4773,8 +4762,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.26299644, y: 8.320047, z: 4.0501313}
-  m_Center: {x: 0.1334962, y: -0.18217222, z: -0.8183353}
+  m_Size: {x: 0.38077736, y: 8.320047, z: 2.3514276}
+  m_Center: {x: 0.07460584, y: -0.18217222, z: 0.031012468}
 --- !u!33 &8649884683489955950
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4818,12 +4807,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &8649884683489955953
@@ -4940,6 +4927,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8697174879740153478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063901672098076934}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.39584127, y: 8.320048, z: 2.2016277}
+  m_Center: {x: -0.05736502, y: -0.4140128, z: 0.23778309}
 --- !u!33 &8727422095889556926
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4996,12 +5004,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!4 &8744199864099062487
