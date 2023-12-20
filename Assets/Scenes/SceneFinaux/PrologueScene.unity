@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28695282}
-  - component: {fileID: 28695283}
   m_Layer: 6
   m_Name: Door1
   m_TagString: Untagged
@@ -157,19 +156,6 @@ Transform:
   - {fileID: 3500188565676592449}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &28695283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28695281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptMessage: '"E" Ouvrir la porte'
 --- !u!1 &193250384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,8 +1462,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1578992966}
-  - component: {fileID: 1578992968}
-  - component: {fileID: 1578992967}
   m_Layer: 6
   m_Name: Door2
   m_TagString: Untagged
@@ -1502,36 +1486,6 @@ Transform:
   - {fileID: 3367541579267435623}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1578992967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578992965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3495deb5da0694596427f8347d3387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptMessage: 
---- !u!114 &1578992968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578992965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb20fc342a56db046ba01d99c79d3e56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monTexte: {fileID: 0}
-  dialogueList: []
-  fauxPanel: {fileID: 0}
-  Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &1688448696
 GameObject:
   m_ObjectHideFlags: 0
