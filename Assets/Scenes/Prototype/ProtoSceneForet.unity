@@ -169,7 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397679fc644d8a94a95e411d71b17fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 0
 --- !u!114 &7668765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,7 +542,6 @@ MonoBehaviour:
   - "Je lancer souvent des avions en papier avec mes parents dans une for\xEAt"
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &182456277
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +651,6 @@ MonoBehaviour:
   - Pourquoi ces souvenirs remontent dans cet endroit ?
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 1211246017}
-  canMove: 0
 --- !u!114 &196312328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +761,22 @@ PrefabInstance:
     - target: {fileID: 1005911251786717333, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 24.682129
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342508081119569836, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342508081119569836, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342508081119569836, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342508081119569836, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2398966557232950936, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
       propertyPath: m_Name
@@ -877,6 +890,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnigmeVesteMannequin
       objectReference: {fileID: 0}
+    - target: {fileID: 8038749186173274641, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_Color.a
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550210596131351366, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_margin.w
+      value: 34.668777
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550210596131351366, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_margin.y
+      value: 34.53662
+      objectReference: {fileID: 0}
     - target: {fileID: 8663461237346800826, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
       propertyPath: m_Name
       value: PlayerCanvas
@@ -888,6 +913,10 @@ PrefabInstance:
     - target: {fileID: 8695901539973699946, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742764632153432269, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1102,7 +1131,6 @@ MonoBehaviour:
   - "Comment un ascenseur peut mener \xE0 une for\xEAt !"
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 279741157}
-  canMove: 0
 --- !u!1 &325111418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1181,6 @@ MonoBehaviour:
   - "et avion, il est semblable \xE0 celui que mon p\xE8re pilotait."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &339521680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2564,6 @@ MonoBehaviour:
     le copilote."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &1380769624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 568926618450982091, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
@@ -3096,7 +3122,6 @@ MonoBehaviour:
     de voler avec lui, de r\xE9aliser mon r\xEAve de devenir pilote..."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &1553799694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,7 +3179,6 @@ MonoBehaviour:
     non pas de les conqu\xE9rir comme lui."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &1652006295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,7 +4125,6 @@ MonoBehaviour:
     veste embl\xE9matique de son m\xE9tier de pilote."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!1 &2002276650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8695901539973699946, guid: 160028ca430f06344a705f336d5be4a7, type: 3}
