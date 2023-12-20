@@ -156,6 +156,59 @@ Transform:
   - {fileID: 3500188565676592449}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182345889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182345890}
+  - component: {fileID: 182345891}
+  m_Layer: 0
+  m_Name: BoxCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182345890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182345889}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.037619, y: 4.3768897, z: -0.4971168}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1534746744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &182345891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182345889}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.418272, y: 26.367802, z: 8.065498}
+  m_Center: {x: -5.6321554, y: 5.18321, z: -7.910242}
 --- !u!1 &193250384
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +310,6 @@ MonoBehaviour:
   - Il faut que je partes d'ici !
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 272907260}
-  canMove: 0
 --- !u!1 &300432501
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +677,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &623015086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623015087}
+  - component: {fileID: 623015088}
+  m_Layer: 0
+  m_Name: BoxCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &623015087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623015086}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.99, y: 4.3768897, z: 18.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1534746744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &623015088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623015086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.5011597, y: 26.367802, z: 11.642242}
+  m_Center: {x: -4.6735992, y: 5.1832104, z: -9.698612}
 --- !u!1 &750412763
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,9 +908,37 @@ PrefabInstance:
       value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: musique
+      value: 
+      objectReference: {fileID: 1275849675}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: lookSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 773bf039867d2254fb6a97cf24086793, type: 3}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e72be49b9a742b144bf7df2a57e9a3d0, type: 3}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 10f9f2e75c92e884d9ec929fba9ed752, type: 3}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f105de86ae7d86746a2159b4054b788d, type: 3}
+    - target: {fileID: 3349142610089678764, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+      propertyPath: clips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1127083481354494b9fcaddc0ec2bae7, type: 3}
     - target: {fileID: 5648753799056126655, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1015,7 +1148,6 @@ MonoBehaviour:
   - Ce n'est pas important.
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 1948651135}
-  canMove: 0
 --- !u!1 &1101740403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1197,134 @@ MonoBehaviour:
   isPartyEnabled: 0
   _light: {fileID: 7338430093523939159}
   timeToStart: 0.5
+--- !u!1 &1275849674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275849676}
+  - component: {fileID: 1275849675}
+  m_Layer: 0
+  m_Name: Audiosource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1275849675
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275849674}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1275849676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275849674}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.445788, y: 4.637775, z: 6.426031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382296492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397679fc644d8a94a95e411d71b17fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 0
 --- !u!4 &1452641943
 Transform:
   m_ObjectHideFlags: 0
@@ -1237,6 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberObject: 0
+  playerInventory: {fileID: 0}
   objectInInventory: []
   objectPickUp: []
 --- !u!1 &1534746743
@@ -1270,6 +1530,8 @@ Transform:
   m_Children:
   - {fileID: 907856328809141553}
   - {fileID: 7846618680974448924}
+  - {fileID: 182345890}
+  - {fileID: 623015087}
   m_Father: {fileID: 1475672035114281359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550684132
@@ -1373,7 +1635,6 @@ MonoBehaviour:
   - Est-ce que c'est l'unique moyen de sortir d'ici ?
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 1550684132}
-  canMove: 0
 --- !u!114 &1552382124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3598,7 +3859,6 @@ MonoBehaviour:
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!114 &6071972108783235932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,8 +3881,8 @@ Transform:
   m_GameObject: {fileID: 3357019976415102534}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0023932431, y: -2.2492683, z: 0.17886935}
-  m_LocalScale: {x: -24.795547, y: -1.6272758, z: -1.2463776}
+  m_LocalPosition: {x: -0.066, y: -4.4, z: 0.049}
+  m_LocalScale: {x: -9.099966, y: -1.6272758, z: -1.2463776}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552382122}
@@ -4167,7 +4427,6 @@ MonoBehaviour:
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!114 &8037079877462191397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,7 +5058,6 @@ MonoBehaviour:
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!114 &8649884683489955953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4997,7 +5255,6 @@ MonoBehaviour:
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 0}
-  canMove: 0
 --- !u!4 &8744199864099062487
 Transform:
   m_ObjectHideFlags: 0
@@ -5230,4 +5487,5 @@ SceneRoots:
   - {fileID: 874163539}
   - {fileID: 501907622}
   - {fileID: 1475672035114281359}
+  - {fileID: 1275849676}
   - {fileID: 1389176797}

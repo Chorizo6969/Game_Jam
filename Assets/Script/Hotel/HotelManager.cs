@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class HotelManager : MonoBehaviour
 {
-    public bool canMove;
 
     private static HotelManager _instance;
     public static HotelManager Instance
