@@ -8,6 +8,7 @@ public class Door_Close_Anim : Interactable
     public GameObject GO;
     public Animator anim;
     public GameObject BoxcolliderElevator;
+    public string sceneName;
     protected override void Interact()//Cette fct Interact permet de lancer la fermeture (et donc l'animation) de la porte
     {
         BoxcolliderElevator.SetActive(true);
@@ -18,6 +19,6 @@ public class Door_Close_Anim : Interactable
     IEnumerator SpawnDelay()
     {
         yield return new WaitForSeconds(6);
-        SceneManager.LoadScene("ProtoSceneForet");
+        SceneManager.LoadScene(sceneName);
     }
 }
