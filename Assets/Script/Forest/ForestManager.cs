@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ForestManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class ForestManager : MonoBehaviour
     }
 
     public int numberObject;
+
+    public GameObject playerInventory;
     public List<GameObject> objectInInventory;
 
     public List<GameObject> objectPickUp;
@@ -32,6 +35,8 @@ public class ForestManager : MonoBehaviour
     {
         //this.GetComponentInChildren<Dialogue>().Activate();
         objectPickUp.Clear();
+
+        playerInventory.SetActive(true);
     }
     public void ObjectInHisPlace()
     {
