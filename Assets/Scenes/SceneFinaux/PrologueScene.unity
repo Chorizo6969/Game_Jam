@@ -264,14 +264,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.1
   dialogueList:
   - Qu'est-ce qu'il se passe ici ?
   - Pourquoi le sol tremble soudainement ?
   - "Les alarmes stridentes et les lumi\xE8res clignotantes me mettent hors de moi."
   - Il faut que je partes d'ici !
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 272907260}
   canMove: 0
 --- !u!1 &300432501
@@ -951,6 +949,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6642cad77ba6b8943ab2489ce22f87d9, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1015,14 +1014,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.1
   dialogueList:
   - "Qu'est-ce que cet ours en peluche rose fait l\xE0 ?!"
   - Etrangement, il me rappelle vaguement quelque chose...
   - Enfin ...
   - Ce n'est pas important.
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 1948651135}
   canMove: 0
 --- !u!1 &1101740403
@@ -1378,11 +1375,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0
   dialogueList:
   - Est-ce que c'est l'unique moyen de sortir d'ici ?
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 1550684132}
   canMove: 0
 --- !u!114 &1552382124
@@ -1533,10 +1528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 0}
-  Delay: 0
   dialogueList: []
   fauxPanel: {fileID: 0}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!1 &1688448696
@@ -1880,6 +1873,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f17cbf6c025babd449d71b62e37ffd93, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1946,6 +1940,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c397ba63e53e8474f8c91d5020dfa2ec, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2003,6 +1998,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 14e346c761ede74418abc4fc4de21cb8, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2103,6 +2099,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f17cbf6c025babd449d71b62e37ffd93, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2153,6 +2150,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 14e346c761ede74418abc4fc4de21cb8, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2211,6 +2209,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 963cc753511112f43b01a8858ae63108, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2290,6 +2289,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2416,6 +2416,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2458,6 +2459,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 56e6858c67b06bc44bc98bd32fe61308, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2574,6 +2576,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 14e346c761ede74418abc4fc4de21cb8, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2724,6 +2727,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 14e346c761ede74418abc4fc4de21cb8, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2766,6 +2770,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f17cbf6c025babd449d71b62e37ffd93, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2954,6 +2959,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3203,6 +3209,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3245,6 +3252,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3344,6 +3352,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 29d69762af06d04468e740190ae85230, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3386,6 +3395,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 963cc753511112f43b01a8858ae63108, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3539,6 +3549,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f17cbf6c025babd449d71b62e37ffd93, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3619,12 +3630,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &6071972108783235932
@@ -3768,6 +3777,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f17cbf6c025babd449d71b62e37ffd93, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3843,6 +3853,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 29d69762af06d04468e740190ae85230, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4110,6 +4121,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0c95011d932f6874e9f2053ad751efd4, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4187,12 +4199,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &8037079877462191397
@@ -4229,6 +4239,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 14e346c761ede74418abc4fc4de21cb8, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4505,6 +4516,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0300d2cf1c6493242bde549ce07354be, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4733,6 +4745,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0300d2cf1c6493242bde549ce07354be, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4818,12 +4831,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!114 &8649884683489955953
@@ -4919,6 +4930,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0300d2cf1c6493242bde549ce07354be, type: 2}
+  - {fileID: 2100000, guid: 71bf5133dea43e44caa4f8bb62b63261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4996,12 +5008,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monTexte: {fileID: 501907625}
-  Delay: 0.02
   dialogueList:
   - "La porte est verrouill\xE9e."
   - "Elle doit \xEAtre bloqu\xE9e depuis l'ext\xE9rieur."
   fauxPanel: {fileID: 501907623}
-  Detruire: 0
   Roger: {fileID: 0}
   canMove: 0
 --- !u!4 &8744199864099062487
