@@ -6,10 +6,9 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TMP_Text monTexte;
-    public float Delay;
+    //public float Delay;
     public List<string> dialogueList;
     public GameObject fauxPanel;
-    public bool Detruire = false;
     public GameObject Roger;
 
     Coroutine maCoroutine;
@@ -81,20 +80,20 @@ public class Dialogue : MonoBehaviour
             isPressed = false;
             Compte = 0;
             //canMove = true;
-            Debug.Log(canMove);
+            //Debug.Log(canMove);
             Destroy(Roger);
         }
         else
         {
-            current = (dialogueList[Compte]);
+            current = dialogueList[Compte];
             Compte++;
         }
     }
     public void AfficheTexte()
     {
         monTexte.text = current;
-        monTexte.maxVisibleCharacters = 0;
-        maCoroutine = StartCoroutine(TexteLettreParLettre());
+        //monTexte.maxVisibleCharacters = 0;
+        //maCoroutine = StartCoroutine(TexteLettreParLettre());
     }
 
     public void OnDisable()
@@ -102,7 +101,7 @@ public class Dialogue : MonoBehaviour
         monTexte.text = null;
         //canMove = true;
     }
-
+    /*
     IEnumerator TexteLettreParLettre()
     {
         for (int i = 0; i <= monTexte.text.Length; i++)
@@ -110,5 +109,5 @@ public class Dialogue : MonoBehaviour
             monTexte.maxVisibleCharacters++;
             yield return new WaitForSeconds(Delay);
         }
-    }
+    }*/
 }
