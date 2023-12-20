@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _divide: 40
+    - _divide: 10
     m_Colors:
     - _color: {r: 1, g: 1, b: 1, a: 0}
     - _fogColor: {r: 0.45882353, g: 0.5568628, b: 0.5294118, a: 0}
