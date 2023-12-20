@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        Debug.Log(Dialogue.Instance.canMove);
         _moveDirection = context.ReadValue<Vector2>();
     }
 

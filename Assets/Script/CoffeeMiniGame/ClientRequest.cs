@@ -9,23 +9,25 @@ public class ClientRequest : MonoBehaviour
     {
         int randomRequest = Random.Range(0, 30);
 
-        if (randomRequest <= 10)
+        if (randomRequest <= 15)
         {
             this.transform.GetChild(0).gameObject.SetActive(true);
-            this.AddComponent<CoffeeRequest>();
+            this.gameObject.tag = "coffee";
+            //this.AddComponent<CoffeeRequest>();
         }
 
-        if (randomRequest <= 20 && randomRequest > 10)
+        else
         {
             this.transform.GetChild(1).gameObject.SetActive(true);
-            this.AddComponent<TeaRequest>();
+            this.gameObject.tag = "tea";
+            //this.AddComponent<TeaRequest>();
         }
 
-        if (randomRequest > 20)
-        {
-            //chocolatSprite.SetActive(true);
-            this.AddComponent<ChocolatRequest>();
-        }
+        //if (randomRequest > 20)
+        //{
+        //    chocolatSprite.SetActive(true);
+        //    this.AddComponent<ChocolatRequest>();
+        //}
 
         StartCoroutine(WaitRequest());
     }

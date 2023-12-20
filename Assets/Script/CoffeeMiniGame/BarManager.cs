@@ -25,6 +25,8 @@ public class BarManager : MonoBehaviour
 
     public int satisfactionClient;
 
+    public bool drink;
+
     public void Start()
     {
         ClientGenerator.Instance.CreateClient();
@@ -33,11 +35,15 @@ public class BarManager : MonoBehaviour
     {
         satisfactionClient--;
         UpdateText();
+        drink = false;
+        Debug.Log("angry");
     }
     public void HappyClient()
     {
         satisfactionClient++;
         UpdateText();
+        drink = false;
+        Debug.Log("happy");
     }
 
     public void UpdateText()
