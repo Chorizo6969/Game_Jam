@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HaveADrink : Interactable
@@ -7,32 +6,40 @@ public class HaveADrink : Interactable
     protected override void Interact()
     {
         BarManager.Instance.drink = true;
-        Debug.Log(this.gameObject);
 
-        if (this.gameObject.tag == "coffee" && gameObject.tag == "coffee")
+        if (BarManager.Instance.player.tag == "coffee" && gameObject.tag == "coffee")
         {
             BarManager.Instance.HappyClient();
             Debug.Log("café donner");
-
         }
 
-        if (this.gameObject.tag == "tea" && gameObject.tag == "tea")
+        if (BarManager.Instance.player.tag == "tea" && gameObject.tag == "tea")
         {
             BarManager.Instance.HappyClient();
             Debug.Log("thé donner");
         }
 
-        else
+        if(BarManager.Instance.player.tag == "tea" && gameObject.tag == "coffee") //une else fait bug
+        {
+            BarManager.Instance.AngryClient();
+            Debug.Log("boissoon donner");
+        }
+        
+        if(BarManager.Instance.player.tag == "coffee" && gameObject.tag == "tea") //une else fait bug
         {
             BarManager.Instance.AngryClient();
             Debug.Log("boissoon donner");
         }
 
+        gameObject.tag = "Untagged";
+        BarManager.Instance.handFull = false;
+
         StartCoroutine(Drink());
     }
     IEnumerator Drink()
     {
+        promptMessage = " ";
         yield return new WaitForSeconds(3);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

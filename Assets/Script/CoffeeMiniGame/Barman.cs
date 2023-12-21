@@ -8,7 +8,6 @@ public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
     public float distance;
 
     public GameObject inventory;
-    public bool handFull;
 
     public void OnInteract(InputAction.CallbackContext context)
     {
@@ -23,18 +22,18 @@ public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
 
     public void TouchSomething(GameObject drink)
     {
-        if (!handFull)
+        if (BarManager.Instance.handFull == false)
         {
             if (drink.tag == "coffee")
             {
-                handFull = true;
+                BarManager.Instance.handFull = true;
                 gameObject.tag = "coffee";
                 inventory.transform.GetChild(1).gameObject.SetActive(true);
             }
 
             if (drink.tag == "tea")
             {
-                handFull = true;
+                BarManager.Instance.handFull = true;
                 gameObject.tag = "tea";
                 inventory.transform.GetChild(2).gameObject.SetActive(true);
             }
@@ -46,15 +45,15 @@ public class Barman : MonoBehaviour, PlayerInput.IPlayerActions
         //}
     }
 
-    public void OnTriggerEnter(Collider collider)
+    public void Update()
     {
-        if (collider.name == "Client(Clone)")
+        if (BarManager.Instance.handFull == false)
         {
-            handFull = false;
-            //gameObject.tag = "Player";
-            inventory.transform.GetChild(2).gameObject.SetActive(false);
+            gameObject.tag = "Player";
             inventory.transform.GetChild(1).gameObject.SetActive(false);
+            inventory.transform.GetChild(2).gameObject.SetActive(false);
         }
+
     }
     public void OnLook(InputAction.CallbackContext context)
     {

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ClientRequest : MonoBehaviour
 { 
-
     public void Start()
     {
         int randomRequest = Random.Range(0, 30);
