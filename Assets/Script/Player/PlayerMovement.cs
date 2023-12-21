@@ -8,8 +8,7 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     public float lookSpeed;
     public Transform playerTransform;
     public Transform cameraTransform;
-    public AudioClip[] clips;
-    public AudioSource musique;
+
 
     Vector2 _moveDirection;
     Vector2 _lookDirection;
@@ -23,7 +22,6 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     public void Start()
     {
-        musique = FindObjectOfType<AudioSource>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -50,28 +48,11 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
         _moveDirection = context.ReadValue<Vector2>();
 
         string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "PrologueScene")
-        {
-            musique.Play();
-        }
-
-    }
-
-    private AudioClip GetRandomClip()
-    {
-        return clips[Random.Range(0, clips.Length)];
     }
 
     void Update()
     {
         string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "PrologueScene")
-        {
-            if (!musique.isPlaying)
-            {
-                musique.clip = GetRandomClip();
-            }
-        }
         Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
         playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
     }
