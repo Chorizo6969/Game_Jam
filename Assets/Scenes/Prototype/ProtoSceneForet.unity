@@ -1830,6 +1830,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 14ef9a029e360f347ae43195be8835ec, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 14ef9a029e360f347ae43195be8835ec, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23bdcfaf5e44e8f4aa39c1d00614be40, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 14ef9a029e360f347ae43195be8835ec, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4aefaa9e347d154b836b6a7be9ae1ec, type: 2}
     - target: {fileID: 919132149155446097, guid: 14ef9a029e360f347ae43195be8835ec, type: 3}
       propertyPath: m_Name
       value: frame2AnimVrai
@@ -1918,6 +1930,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 82058e92787a2074ea139444596b8eff, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 82058e92787a2074ea139444596b8eff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23bdcfaf5e44e8f4aa39c1d00614be40, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 82058e92787a2074ea139444596b8eff, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4aefaa9e347d154b836b6a7be9ae1ec, type: 2}
     - target: {fileID: 919132149155446097, guid: 82058e92787a2074ea139444596b8eff, type: 3}
       propertyPath: m_Name
       value: foretPretePourAnim
