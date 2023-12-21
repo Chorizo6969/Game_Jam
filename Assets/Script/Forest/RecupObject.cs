@@ -7,7 +7,6 @@ public class RecupObject : Interactable
     protected override void Interact()//fct qui permet de d�truire un object lorsque l'on interagit avec lui
     {
         ForestManager.Instance.objectPickUp.Add(gameObject);
-
         for (int i = 0; i < ForestManager.Instance.objectInInventory.Count; i++)
         {
             if (gameObject.name == ForestManager.Instance.objectInInventory[i].name)
@@ -18,7 +17,6 @@ public class RecupObject : Interactable
             }
         }
         this.GetComponentInParent<Dialogue>().Activate();
-        this.GetComponentInParent<Music>().PlayMusic();
         gameObject.SetActive(false);
     }
 }
