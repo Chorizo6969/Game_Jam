@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input system created
 {
@@ -19,11 +20,9 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     float lookX;
     float lookY;
 
-    Rigidbody rb;
 
     public void Start()
     {
-        rb = this.GetComponent<Rigidbody>();
         musique = FindObjectOfType<AudioSource>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -49,7 +48,13 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     public void OnMove(InputAction.CallbackContext context)
     {
         _moveDirection = context.ReadValue<Vector2>();
-        //musique.Play();
+
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "PrologueScene")
+        {
+            musique.Play();
+        }
+
     }
 
     private AudioClip GetRandomClip()
@@ -59,10 +64,14 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     void Update()
     {
-        /*if (!musique.isPlaying)
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "PrologueScene")
         {
-            musique.clip = GetRandomClip();
-        }*/
+            if (!musique.isPlaying)
+            {
+                musique.clip = GetRandomClip();
+            }
+        }
         Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
         playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
     }
