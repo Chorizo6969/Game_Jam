@@ -14,7 +14,6 @@ public class CursorSong : MonoBehaviour
 
     public void OnPointerEnter()
     {
-        Debug.Log("Dino");
         audiosource.Play();
     }
 }

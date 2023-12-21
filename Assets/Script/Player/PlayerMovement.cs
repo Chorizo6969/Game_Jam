@@ -48,30 +48,10 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     public void OnMove(InputAction.CallbackContext context)
     {
         _moveDirection = context.ReadValue<Vector2>();
-
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "PrologueScene")
-        {
-            musique.Play();
-        }
-
-    }
-
-    private AudioClip GetRandomClip()
-    {
-        return clips[Random.Range(0, clips.Length)];
     }
 
     void Update()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "PrologueScene")
-        {
-            if (!musique.isPlaying)
-            {
-                musique.clip = GetRandomClip();
-            }
-        }
         Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
         playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
     }
