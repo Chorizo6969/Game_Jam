@@ -43,8 +43,7 @@ public class ClientGenerator : MonoBehaviour
 
     public void CreateClient() //création client
     {
-        GameObject newClient = Instantiate(clientPrefab);
-        newClient.AddComponent<ClientRequest>();
+        Instantiate(clientPrefab);
         RandomPosition();
         StartCoroutine(WaitForNewClient());
     }

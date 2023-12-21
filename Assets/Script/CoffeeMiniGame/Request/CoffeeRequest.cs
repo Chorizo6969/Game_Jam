@@ -1,20 +1,19 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CoffeeRequest : MonoBehaviour
 {
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "coffee")
+        if (BarManager.Instance.drink)
         {
-            BarManager.Instance.HappyClient();
-            Destroy(this.gameObject);
+            BarManager.Instance.drink = false;
+            StartCoroutine(Drink());
         }
-        else
-        {
-            BarManager.Instance.AngryClient();
-            Destroy(this.gameObject);
-        }
+    }
+    IEnumerator Drink()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(this.gameObject);
     }
 }
