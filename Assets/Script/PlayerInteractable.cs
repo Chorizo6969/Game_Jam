@@ -21,6 +21,8 @@ public class PlayerInteractable : MonoBehaviour
         Ray ray = new Ray(cam.transform.position, cam.transform.forward); //Création RayCast
         Debug.DrawRay(ray.origin, ray.direction * distance * 3);//Pour changer le Raycast
         RaycastHit hitInfo;
+
+        
         if (Physics.Raycast(ray, out hitInfo, distance * 2, mask)) //Pour changer la portée de détection du Raycast
         {
             interactable = hitInfo.collider.GetComponent<Interactable>(); // Mettre � jour interactable

@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1448241287799444332, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_Name
-      value: Coffee
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1448241287799444332, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       propertyPath: m_TagString
@@ -1626,6 +1626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberObject: 0
+  playerInventory: {fileID: 0}
+  objectInInventory: []
   objectPickUp: []
 --- !u!1 &1565595253
 GameObject:
