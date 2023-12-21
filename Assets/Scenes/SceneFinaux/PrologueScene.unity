@@ -305,8 +305,9 @@ MonoBehaviour:
   monTexte: {fileID: 501907625}
   dialogueList:
   - Qu'est-ce qu'il se passe ici ?
-  - Pourquoi le sol tremble soudainement ?
-  - "Les alarmes stridentes et les lumi\xE8res clignotantes me mettent hors de moi."
+  - "Est-ce un \xE9boulement ?"
+  - "Cette alarme assourdissante et ces lumi\xE8res clignotantes me mettent hors
+    de moi."
   - Il faut que je partes d'ici !
   fauxPanel: {fileID: 501907623}
   Roger: {fileID: 272907260}
@@ -1099,29 +1100,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1448241287799444332, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 1316691077793418780, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 922698445}
+      addedObject: {fileID: 1650975476}
   m_SourcePrefab: {fileID: 100100000, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
---- !u!1 &922698435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1448241287799444332, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
-  m_PrefabInstance: {fileID: 874163539}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &922698445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922698435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7bdda7c8b0c61a458f17fd68ab37a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shakeMagnitude: 2
-  shakeSpeed: 2
 --- !u!1 &926569965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2293,23 @@ Transform:
   - {fileID: 3367541579267435623}
   m_Father: {fileID: 465414646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1650975471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1316691077793418780, guid: f37fb62ff32cb3346b193e2285886a9e, type: 3}
+  m_PrefabInstance: {fileID: 874163539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1650975476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650975471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7bdda7c8b0c61a458f17fd68ab37a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1688448696
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,8 +5378,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.69667095, y: 8.379719, z: 4.5480337}
-  m_Center: {x: 2.5119376, y: -4.1952314, z: -0.10142319}
+  m_Size: {x: 5.2378073, y: 9.38002, z: 6.7326746}
+  m_Center: {x: 4.4135394, y: -4.6953793, z: 0.9908952}
 --- !u!65 &8441271722958771704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5400,8 +5399,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.5480347, y: 8.379719, z: 1.3788853}
-  m_Center: {x: -0.036565993, y: -4.1952314, z: -3.04505}
+  m_Size: {x: 9.311711, y: 12.260669, z: 3.1659536}
+  m_Center: {x: 2.1924388, y: -6.1357017, z: -3.6270278}
 --- !u!65 &8441271722958771705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5421,8 +5420,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.5480347, y: 8.379719, z: 0.5847677}
-  m_Center: {x: -0.036565993, y: -4.1952314, z: 2.4271438}
+  m_Size: {x: 9.527877, y: 9.698237, z: 3.7713172}
+  m_Center: {x: 2.453369, y: -4.854492, z: 3.638457}
 --- !u!23 &8502773399243107864
 MeshRenderer:
   m_ObjectHideFlags: 0

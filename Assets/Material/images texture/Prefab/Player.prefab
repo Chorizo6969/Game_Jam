@@ -293,6 +293,8 @@ MonoBehaviour:
   lookSpeed: 3
   playerTransform: {fileID: 1979451321561722595}
   cameraTransform: {fileID: 3097876316391452545}
+  clips: []
+  musique: {fileID: 0}
 --- !u!114 &7178004096364760282
 MonoBehaviour:
   m_ObjectHideFlags: 0
