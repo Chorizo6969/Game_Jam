@@ -185,12 +185,12 @@ MonoBehaviour:
   numberObject: 0
   playerInventory: {fileID: 1812951225}
   objectInInventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1039442135}
+  - {fileID: 179784578}
+  - {fileID: 1935736175}
+  - {fileID: 76573095}
+  - {fileID: 348415501}
+  - {fileID: 140389911}
   objectPickUp: []
 --- !u!82 &7668766
 AudioSource:
@@ -409,6 +409,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: '"E" Prendre l''ours'
+--- !u!1 &76573095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2398966557232950936, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &82689447
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +717,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1652006296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &140389911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8695901539973699946, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &179602099
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 179602100}
   - component: {fileID: 179602101}
+  - component: {fileID: 179602102}
   m_Layer: 6
   m_Name: DialoguePaperPlane
   m_TagString: Untagged
@@ -759,9 +770,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monTexte: {fileID: 214561825}
   dialogueList:
-  - "Je lancer souvent des avions en papier avec mes parents dans une for\xEAt"
+  - "Je lan\xE7ais souvent des avions en papier avec mes parents dans une for\xEAt"
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &179602102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179602099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 154f9f7f10108084d8f936390eba3c05, type: 3}
+--- !u!1 &179784578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3551052293602698889, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &182456277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1148,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 568926618450982091, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmeNoursLit
+      objectReference: {fileID: 0}
     - target: {fileID: 794648500786663855, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1129,6 +1163,18 @@ PrefabInstance:
     - target: {fileID: 1005911251786717333, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 24.682129
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398966557232950936, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmePaperPlaneChestToy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3370918630324132625, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmeManuelCasier
+      objectReference: {fileID: 0}
+    - target: {fileID: 3551052293602698889, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmeKepiMannequin
       objectReference: {fileID: 0}
     - target: {fileID: 5652926496761041944, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_fontColor.b
@@ -1226,6 +1272,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546277475940503933, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmeVesteMannequin
+      objectReference: {fileID: 0}
     - target: {fileID: 8550210596131351366, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_margin.w
       value: 34.668777
@@ -1237,6 +1287,10 @@ PrefabInstance:
     - target: {fileID: 8663461237346800826, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_Name
       value: PlayerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695901539973699946, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+      propertyPath: m_Name
+      value: EnigmePlaneToyChestToy
       objectReference: {fileID: 0}
     - target: {fileID: 8742764632153432269, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
       propertyPath: m_IsActive
@@ -1460,6 +1514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325111419}
   - component: {fileID: 325111420}
+  - component: {fileID: 325111421}
   m_Layer: 6
   m_Name: DialoguePlaneToy
   m_TagString: Untagged
@@ -1500,6 +1555,20 @@ MonoBehaviour:
   - "et avion, il est semblable \xE0 celui que mon p\xE8re pilotait."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &325111421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325111418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 154f9f7f10108084d8f936390eba3c05, type: 3}
 --- !u!1 &339521680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1653,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339521680}
   m_Mesh: {fileID: 4007674578567448307, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!1 &348415501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3370918630324132625, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &411213015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1316691077793418780, guid: 41d353e403736ef4a8f957a6e2c723b3, type: 3}
@@ -1744,6 +1818,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510393305}
   m_Mesh: {fileID: 1706509930907706004, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!1 &514755712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514755714}
+  - component: {fileID: 514755713}
+  m_Layer: 0
+  m_Name: Audiosource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &514755713
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514755712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &514755714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514755712}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -371.53003, y: 24.484262, z: -24.02552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &527353637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3260,6 +3462,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptMessage: "\"E\" R\xE9cup\xE9rer l'avion en papier"
+--- !u!1 &1039442135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 568926618450982091, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1043404583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3592,6 +3799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316947322}
   - component: {fileID: 1316947323}
+  - component: {fileID: 1316947324}
   m_Layer: 6
   m_Name: DialogueNours
   m_TagString: Untagged
@@ -3637,6 +3845,20 @@ MonoBehaviour:
     le copilote."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &1316947324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316947321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 9faba58140cacf142a8f3cff350aa69c, type: 3}
 --- !u!1 &1381341483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,6 +4362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543050083}
   - component: {fileID: 1543050084}
+  - component: {fileID: 1543050085}
   m_Layer: 6
   m_Name: DialogueKepi
   m_TagString: Untagged
@@ -4185,6 +4408,20 @@ MonoBehaviour:
     de voler avec lui, de r\xE9aliser mon r\xEAve de devenir pilote..."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &1543050085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543050082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 4453141b452e1ed46bd18665abd718be, type: 3}
 --- !u!1 &1553799694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,6 +4432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553799695}
   - component: {fileID: 1553799696}
+  - component: {fileID: 1553799697}
   m_Layer: 6
   m_Name: DialogueManuel
   m_TagString: Untagged
@@ -4242,6 +4480,20 @@ MonoBehaviour:
     non pas de les conqu\xE9rir comme lui."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &1553799697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553799694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 154f9f7f10108084d8f936390eba3c05, type: 3}
 --- !u!1 &1652006295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,6 +6231,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924959632}
   m_Mesh: {fileID: -8750259064857486205, guid: f60195a45b503e94eb3d3955ed14793f, type: 3}
+--- !u!1 &1935736175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7546277475940503933, guid: 49c2cf07667bdb944a242a4ddfb017bd, type: 3}
+  m_PrefabInstance: {fileID: 214561824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970714213
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,6 +6246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970714214}
   - component: {fileID: 1970714215}
+  - component: {fileID: 1970714216}
   m_Layer: 6
   m_Name: DialogueVeste
   m_TagString: Untagged
@@ -6032,6 +6290,20 @@ MonoBehaviour:
     veste embl\xE9matique de son m\xE9tier de pilote."
   fauxPanel: {fileID: 214561826}
   Roger: {fileID: 0}
+--- !u!114 &1970714216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970714213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64547f62f476bb4087ebcaede890d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 514755713}
+  interactionSound: {fileID: 8300000, guid: 4453141b452e1ed46bd18665abd718be, type: 3}
 --- !u!1001 &2030786080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6611,4 +6883,5 @@ SceneRoots:
   - {fileID: 8832294004608584824}
   - {fileID: 2085599001}
   - {fileID: 88106604}
+  - {fileID: 514755714}
   - {fileID: 1268120552}
