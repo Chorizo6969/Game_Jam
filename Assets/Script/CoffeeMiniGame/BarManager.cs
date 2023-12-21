@@ -33,6 +33,13 @@ public class BarManager : MonoBehaviour
     public Animator animator;
     public bool handFull;
 
+    public GameObject dialogue2;
+    public GameObject dialogue3;
+    public GameObject dialogue4;
+    public GameObject dialogue5;
+    public GameObject dialogue6;
+    public GameObject dialogue7;
+
     public void Start()
     {
         canvasCoffeeGame.SetActive(true);
@@ -63,6 +70,27 @@ public class BarManager : MonoBehaviour
     {
         numberOfDrink++;
 
+        if (numberOfDrink == 3)
+        {
+            dialogue2.GetComponent<Dialogue>().Activate();
+        }
+        if (numberOfDrink == 5)
+        {
+            dialogue3.GetComponent<Dialogue>().Activate();
+        }
+        if (numberOfDrink == 8)
+        {
+            dialogue4.GetComponent<Dialogue>().Activate();
+        }
+        if (numberOfDrink == 10)
+        {
+            dialogue5.GetComponent<Dialogue>().Activate();
+        }
+        if (numberOfDrink == 12)
+        {
+            dialogue6.GetComponent<Dialogue>().Activate();
+        }
+
         if(numberOfDrink >= 15)
         {
             CanEscapeTheCoffee();
@@ -72,5 +100,6 @@ public class BarManager : MonoBehaviour
     public void CanEscapeTheCoffee()
     {
         animator.SetBool("DoorCanOpen", true);
+        dialogue7.GetComponent<Dialogue>().Activate();
     }
 }
