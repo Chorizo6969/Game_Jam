@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
     public void OnMove(InputAction.CallbackContext context)
     {
         _moveDirection = context.ReadValue<Vector2>();
-        musique.Play();
+        //musique.Play();
     }
 
     private AudioClip GetRandomClip()
@@ -59,10 +59,10 @@ public class PlayerMovement : MonoBehaviour, PlayerInput.IPlayerActions // input
 
     void Update()
     {
-        if (!musique.isPlaying)
+        /*if (!musique.isPlaying)
         {
             musique.clip = GetRandomClip();
-        }
+        }*/
         Vector3 moveDirection = new Vector3(_moveDirection.x, 0, _moveDirection.y);
         playerTransform.Translate(moveDirection * (speed * Time.deltaTime));
     }
