@@ -5,7 +5,16 @@ using System.Collections;
 public class ChangeScene : MonoBehaviour
 {
     public string sceneName;
+    public Animator animator;
+    public GameObject fonduAuNoir;
 
+    public void FonduAuNoir()
+    {
+        fonduAuNoir.SetActive(true);
+        animator.SetBool("Play", true);
+        StartCoroutine(waitFonduAuNoir());
+
+    }
     public void LoadScene()
     {
         SceneManager.LoadScene(sceneName);
@@ -23,8 +32,10 @@ public class ChangeScene : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("Credits");
     }
-    public void MainMenueScene()
+
+    IEnumerator waitFonduAuNoir()
     {
-        SceneManager.LoadScene("MainMenu");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(sceneName);
     }
 }
