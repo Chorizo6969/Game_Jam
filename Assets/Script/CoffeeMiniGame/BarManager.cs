@@ -51,7 +51,7 @@ public class BarManager : MonoBehaviour
         UpdateText();
         NumberOfDrink();
         drink = false;
-        Debug.Log(drink);
+        //Debug.Log(drink);
     }
     public void HappyClient()
     {
@@ -59,7 +59,7 @@ public class BarManager : MonoBehaviour
         UpdateText();
         NumberOfDrink();
         drink = false;
-        Debug.Log(drink);
+        //Debug.Log(drink);
     }
 
     public void UpdateText()

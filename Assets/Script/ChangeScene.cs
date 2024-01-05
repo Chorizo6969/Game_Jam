@@ -8,6 +8,11 @@ public class ChangeScene : MonoBehaviour
     public Animator animator;
     public GameObject fonduAuNoir;
 
+    public void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void FonduAuNoir()
     {
         fonduAuNoir.SetActive(true);
